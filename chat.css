@@ -1,0 +1,38 @@
+ body{
+       background-color:powderblue;
+ }
+ .container{
+        height:400px;
+        width:600px;
+      background-image: url("juju1.jpg");
+      margin:40px;
+
+ }
+ img{
+     width:120px;
+ }
+  .contain{
+       
+       margin-left: 1400px;
+       margin-top: 200px;
+  }
+  .container2{
+       height:300px;
+       width:500px;
+       border-radius: 25px;
+       background-color: thistle;
+       display:none;
+       margin-left: 40px;
+  } 
+  #userbox{
+      color:violet;
+      background-color: white;
+      font-family: cursive;
+      width:500px;
+      height:100px;
+     margin-top: 70px;
+  }
+  .col-md-2{
+      margin-left: 820px;
+      
+  }

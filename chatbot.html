@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/475aee3c4e.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+        
+              <img src="24x7.jpg">
+ 
+            </div>
+
+           <div class="col-md-2">
+             <div class="container2" id="chat">
+                <div class="header">
+                    <h2> how can i help you!</h2>
+                    
+                </div>
+              <div class="content">
+                  <h3>say hi!..</h3>
+                <p id="chatlog">LET'S CHAT..</p>
+              </div> 
+              <div class="input">
+               <input type="text" id="userbox" placeholder="typing...." >
+                                                               
+                <button type="button" onclick="talk()"> submit</button>
+              
+              </div>
+
+              </div>   
+           </div>
+
+
+
+        </div> 
+     </div>
+            <div class="contain">
+             <button type="button" onclick="document.getElementById('chat').style.display='block'"><i class="fas fa-comment-alt"></i></button>
+
+            </div>
+          
+      
+</body>
+</html>

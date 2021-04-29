@@ -1,0 +1,65 @@
+body{
+    background-color: teal;
+}
+.container{
+    
+    width:1200px;
+    height:600px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 200px;
+
+}
+h1{
+       font-size: 50px;
+      margin-left: 600px;
+      color:black;
+       background-color: teal;
+       text-shadow:  black;
+       font-family: cursive;
+
+}
+h2{
+    
+    margin-left: 20px;
+    color:cadetblue;
+    font-family: serif;
+}
+  .d-flex{
+      margin-top: 40px;
+  }
+    
+h6{
+    color:grey;
+}
+hr{
+background-color: hotpink;
+}
+#input[type=text]{
+    border:  none;
+}
+#task{
+    height:200px;
+    width:600px;
+}
+
+
+
+li {
+    cursor: pointer;
+    position: relative;
+    
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    width:1050px;
+}
+
+
+ li{
+     display:block;
+ }
+
+    
+   

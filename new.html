@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/475aee3c4e.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   </head>
+   <body>
+       
+      <button type="button" onclick="document.getElementById('demo').innerHTML=Date()" ondblclick="document.getElementById('demo').style.display='none'";> click</button>
+       <p id="demo" ></p>
+       <p id="test"> </p>
+    
+       <input type="text" id="input1" value = "" />
+       <input type="text" id="input2"  value= "" />=
+       <input type="text" id="answer"  value=""/>
+        <button type="button" id="add" onclick="addition()">ADD</button>
+     <script>
+       function addition(){
+        
+             var x= parseInt(document.getElementById("input1").value);
+             var y= parseInt(document.getElementById("input2").value);
+             var z= document.getElementById("answer");
+              
+               z.value= x+y;
+              
+
+                  //  z.value=x-y;
+                   //z.value=x*y;
+                  //z.value=x/y;
+       }
+         
+         
+           var person={name:"anju",age: 28, id:22, lastname:"sen"};
+        
+       
+               document.getElementById("test").innerHTML= person.name + "is" + person.age+ person.id;
+
+     
+
+
+
+       
+
+     </script>
+
+
+
+
+
+   </body>
+</html>
