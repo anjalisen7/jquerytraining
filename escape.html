@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+              
+       <input type="text" id="txt" onchange="escape()">
+       <button type="button" onclick="escape()"> click</button>
+       <p id="demo"></p>
+       <script>
+               function escape(){
+            var x=  document.getElementById("txt").value;
+            var y= "We are the so-called \"Vikings\" from the north.";
+            var z = "it\'s alright";
+            //var a = "it's \r not alright";
+            var a = "it's \t not alright";
+            //var a ="kuch to \b dhaga"; <!----for box---->
+           // var a=" kuch to \f kre"; <!---for uparrow--->
+           
+                document.getElementById("demo").innerHTML=x + ":" + "<br>"+ y +"<br>"+ z + a;
+                
+               }
+
+       </script>  
+
+</body>
+</html>
