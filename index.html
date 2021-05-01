@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>str</title>
+    <title>split</title>
 </head>
 <body>
 
@@ -13,12 +13,13 @@
        <input type="text" id="txt">
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="str()">click</button>
+  <button type="button" id="btn" onclick="split()">click</button>
      <script>
-            function str(){
-          let x= document.getElementById("txt").value;
+            function split(){
+          var x= document.getElementById("txt").value;
+          var arr = x.split(",");
           
-           document.getElementById("demo").innerHTML= x[0];
+           document.getElementById("demo").innerHTML= arr[1];
           }
          
      </script>  
