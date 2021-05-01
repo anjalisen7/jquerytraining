@@ -12,8 +12,11 @@
      <p id="demo"></p>
      <button type="button" id="btn" onclick="change()">click</button>
      <script>
-          var x= document.getElementById("txt").value;
-          document.getElementById("demo").innerHTML = x.toUpperCase();
+            function change(){
+          var x= document.getElementById("txt");
+          x.value= x.value.toUpperCase();
+     
+            }
          
      </script>  
 
