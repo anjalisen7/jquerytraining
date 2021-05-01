@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>charat</title>
+    <title>charcode</title>
 </head>
 <body>
 
@@ -13,12 +13,12 @@
        <input type="text" id="txt">
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="charat()">click</button>
+  <button type="button" id="btn" onclick="charcode()">click</button>
      <script>
-            function charat(){
+            function charcode(){
           let x= document.getElementById("txt").value;
           
-           document.getElementById("demo").innerHTML= x.charAt(0);
+           document.getElementById("demo").innerHTML= x.charCodeAt(3);
           }
          
      </script>  
