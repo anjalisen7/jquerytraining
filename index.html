@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>concat</title>
+    <title>padstart</title>
 </head>
 <body>
-     <input type="text" id="txt">
-     <input type ="text" id="txt2">  
-     
+
+      
+       <input type="text" id="txt">
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="concat()">click</button>
+  <button type="button" id="btn" onclick="padstart()">click</button>
      <script>
-            function concat(){
-          var x= document.getElementById("txt").value;
-           var y= document.getElementById("txt2").value;
-          
-          
-           var a= x.concat(y);
-           document.getElementById("demo").innerHTML= a;
+            function padstart(){
+          let str= document.getElementById("txt").value;
+           str = str.padStart(4,0);
+           document.getElementById("demo").innerHTML= str;
           
      
             }
