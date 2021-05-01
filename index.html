@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>padend</title>
+    <title>charat</title>
 </head>
 <body>
 
@@ -13,15 +13,13 @@
        <input type="text" id="txt">
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="padend()">click</button>
+  <button type="button" id="btn" onclick="charat()">click</button>
      <script>
-            function padend(){
+            function charat(){
           let x= document.getElementById("txt").value;
-           x = x.padEnd(4,0);
-           document.getElementById("demo").innerHTML= x;
           
-     
-            }
+           document.getElementById("demo").innerHTML= x.charAt(0);
+          }
          
      </script>  
 
