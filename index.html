@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>multi</title>
+    <title>nan</title>
 </head>
 <body>
 
-      <input type="text" id="txt">
-      <input type="text" id="txt2">
+     
       
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="multi()">*</button>
+  <button type="button" id="btn" onclick="Nan()">+</button>
      <script>
-            function multi(){
-          var x= document.getElementById("txt").value;
-          var y= document.getElementById("txt2").value;
+            function Nan(){
+          var x= 200;
+          var y=NaN;
          
-          var multi = x*y;
-           document.getElementById("demo").innerHTML= multi;
+          var nan = x+y;
+           document.getElementById("demo").innerHTML= nan;
           }
      
      </script>  
