@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>valueof</title>
+    <title>numof</title>
 </head>
 <body>
 
@@ -13,15 +13,22 @@
      
       <input type="text" id="txt">
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="val()">click</button>
+  <button type="button" id="btn" onclick="num()">click</button>
      <script>
-            function val(){
+            function num(){
          
                 var x = 34.25;
                              document.getElementById("demo").innerHTML =
-                                     x.valueOf() + "<br>" + 
-                                         (34.25).valueOf() + "<br>" + 
-                                     (100+34).valueOf(4) + "<br>" ;
+                             Number(true) + "<br>" +
+                               Number(false) + "<br>" +
+                             Number(x) + "<br>" + 
+                             Number("  10") + "<br>" +
+                           Number("34  ") + "<br>" +
+                            Number(" 34  ") + "<br>" +
+                             Number("34.25") + "<br>" + 
+                             Number("34,33") + "<br>" +
+                          Number("34 24") + "<br>" +
+                                     Number("John");
             }
                                   
            
