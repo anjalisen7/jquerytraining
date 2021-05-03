@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>expo</title>
+    <title>tofixed</title>
 </head>
 <body>
 
@@ -13,16 +13,16 @@
      
       <input type="text" id="txt">
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="exp()">click</button>
+  <button type="button" id="btn" onclick="fix()">click</button>
      <script>
-            function exp(){
+            function fix(){
          
-                var x = 23;
+                var x = 13.21;
                              document.getElementById("demo").innerHTML =
-                                     x.toExponential() + "<br>" + 
-                                         x.toExponential(2) + "<br>" + 
-                                     x.toExponential(4) + "<br>" + 
-                                    x.toExponential(6);
+                                     x.toFixed() + "<br>" + 
+                                         x.toFixed(2) + "<br>" + 
+                                     x.toFixed(4) + "<br>" + 
+                                    x.toFixed(6);
 
            
          
