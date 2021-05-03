@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nan</title>
+    <title>infinity</title>
 </head>
 <body>
 
      
-      
+      <input type="text" id="txt">
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="Nan()">+</button>
+  <button type="button" id="btn" onclick="infinity()">click</button>
      <script>
-            function Nan(){
-          var x= 200;
-          var y=NaN;
-         
-          var nan = x+y;
-           document.getElementById("demo").innerHTML= nan;
+            function infinity(){
+          var x= document.getElementById("txt").value;
+          var text= "";
+           while(x!= Infinity){
+                  
+            x = x*x;
+            text= text + x +"<br>";
+           }
+          document.getElementById("demo").innerHTML= text;
           }
      
      </script>  
