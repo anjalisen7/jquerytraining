@@ -5,26 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>splitarr</title>
+    <title>numadd</title>
 </head>
 <body>
 
       
-       <input type="text" id="txt">
+      
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="splitarr()">click</button>
+  <button type="button" id="btn" onclick="numadd()">+</button>
      <script>
-            function splitarr(){
-          var x= document.getElementById("txt").value;
-          var arr = x.split("");
-          var text ="";
-          var i;
-           for(i=0; i<arr.length; i++){
-             text += arr[i] + "<br>"
-          }
-          
-           document.getElementById("demo").innerHTML= text;
+            function numadd(){
+          var x= 100;
+          var y =200;
+          var add = x+y;
+           document.getElementById("demo").innerHTML= add;
           }
      
      </script>  
