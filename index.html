@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subtract</title>
+    <title>divi</title>
 </head>
 <body>
 
-      
+      <input type="text" id="txt">
+      <input type="text" id="txt2">
       
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="subtract()">+</button>
+  <button type="button" id="btn" onclick="divi()">/</button>
      <script>
-            function subtract(){
-          var x= 100;
-          var y =20;
-          var sub = x-y;
-           document.getElementById("demo").innerHTML= sub;
+            function divi(){
+          var x= document.getElementById("txt").value;
+          var y= document.getElementById("txt2").value;
+         
+          var divi = x/y;
+           document.getElementById("demo").innerHTML= divi;
           }
      
      </script>  
