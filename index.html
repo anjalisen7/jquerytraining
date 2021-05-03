@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>infinity</title>
+    <title>infini</title>
 </head>
 <body>
 
      
-      <input type="text" id="txt">
+     
      
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="infinity()">click</button>
+  <button type="button" id="btn" onclick="infini()">click</button>
      <script>
-            function infinity(){
-          var x= document.getElementById("txt").value;
-          var text= "";
-           while(x!= Infinity){
-                  
-            x = x*x;
-            text= text + x +"<br>";
-           }
-          document.getElementById("demo").innerHTML= text;
+            function infini(){
+         
+          var text= 2/0;
+          var y= -2/0;
+           
+         document.getElementById("demo").innerHTML= text + "<br>" + y;
           }
      
      </script>  
