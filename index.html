@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>toprecision</title>
+    <title>valueof</title>
 </head>
 <body>
 
@@ -13,20 +13,20 @@
      
       <input type="text" id="txt">
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="pre()">click</button>
+  <button type="button" id="btn" onclick="val()">click</button>
      <script>
-            function pre(){
+            function val(){
          
                 var x = 34.25;
                              document.getElementById("demo").innerHTML =
-                                     x.toPrecision() + "<br>" + 
-                                         x.toPrecision(2) + "<br>" + 
-                                     x.toPrecision(4) + "<br>" + 
-                                    x.toPrecision(6);
-
+                                     x.valueOf() + "<br>" + 
+                                         (34.25).valueOf() + "<br>" + 
+                                     (100+34).valueOf(4) + "<br>" ;
+            }
+                                  
            
          
-         }
+         
     
      </script>  
 
