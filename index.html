@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>typeof</title>
+    <title>expo</title>
 </head>
 <body>
 
   
      
-     
+      <input type="text" id="txt">
       <p id="demo"></p>
-  <button type="button" id="btn" onclick="typ()">click</button>
+  <button type="button" id="btn" onclick="exp()">click</button>
      <script>
-            function typ(){
+            function exp(){
          
-                var x =43;
-                var y= new Number(20);
-                document.getElementById("demo").innerHTML = typeof x + "<br>"+ typeof y;
+                var x = 23;
+                             document.getElementById("demo").innerHTML =
+                                     x.toExponential() + "<br>" + 
+                                         x.toExponential(2) + "<br>" + 
+                                     x.toExponential(4) + "<br>" + 
+                                    x.toExponential(6);
 
            
          
