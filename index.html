@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adding new element</title>
+    <title>associative array</title>
 </head>
 <body>
-    <input type="text" id="txt">
+   
     <button type="button" id="btn" onclick="add()">add</button>
   <p id="demo"></p>
    <script>
        
-    var fruits = ["banana","apple","grapes","kiwi"];
-          document.getElementById("demo").innerHTML= fruits;
+    var student = [];
+             student[0]="anju";
+                     student[1]=14;
+              student[2] ="gwl";
+         
            function add()
            {    
-              var t=  document.getElementById("txt").value;
-               fruits[4]=t;
-               document.getElementById("demo").innerHTML= fruits;
+              
+               document.getElementById("demo").innerHTML= student + "<br>" +"length:" + student.length;
            }
 
    
