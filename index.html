@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>access last element</title>
+    <title>looping array element</title>
 </head>
 <body>
   <p id="demo"></p>
    <script>
        
 var fruits = ["banana","apple","grapes","kiwi"];
-  
-  
-      document.getElementById("demo").innerHTML= fruits[fruits.length-1];
+ var flen= fruits.length;
+var i;
+      
+   text="<ul>"
+for (i=0; i<flen; i++){
+               text += "<li>"+ fruits[i] + "</li>";
 
-
-
+         }
+      document.getElementById("demo").innerHTML= text;
+           text="</ul>"
    </script>
      
     
