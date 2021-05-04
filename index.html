@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>changing element</title>
+    <title>array object</title>
 </head>
 <body>
   <p id="demo"></p>
    <script>
        
-var fruits = ["banana","apple","grapes","kiwi","pomegranate","pineapple"];
-   fruits[4]="mango"
-      document.getElementById("demo").innerHTML= fruits;
+var fruits = {first:"banana",second:"apple",third:"grapes",fourth:"kiwi"};
+  
+      document.getElementById("demo").innerHTML= fruits["fourth"];
 
 
 
