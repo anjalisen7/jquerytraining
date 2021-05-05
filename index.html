@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lowestvalue()</title>
+    <title>highestvalue()</title>
 </head>
 <body>
        <!------<input type ="text" id="txt">-->
@@ -21,7 +21,7 @@
    
            function slice()
            {    
-            points.sort(function(a, b){return a-b});
+            points.sort(function(a, b){return b-a});
                   
             document.getElementById("demo").innerHTML= points[0];
            }
@@ -29,4 +29,4 @@
             
  </script>
 </body>
-</html>
+</html> 
