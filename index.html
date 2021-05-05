@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>push()</title>
+    <title>shift()</title>
 </head>
 <body>
-  
-    <button type="button" id="btn" onclick="add()">add</button>
+         <!-------<input type ="text" id="txt">--->
+    <button type="button" id="btn" onclick="shift()">dlt</button>
   <p id="demo"></p>
   <p id="demo1">:</p>
    <script>
@@ -17,10 +17,12 @@
     var fruits = ["banana","apple","kiwi","peach","pulm"];
     document.getElementById("demo").innerHTML= fruits;
    
-           function add()
+           function shift()
            {    
-           
-            document.getElementById("demo1").innerHTML=  "length  is:" + fruits.push(x);
+            //var x= document.getElementById("txt").value;
+            document.getElementById("demo1").innerHTML=  "dlt :" + fruits.shift();
+            document.getElementById("demo").innerHTML =fruits;
+            
             
              
            }
