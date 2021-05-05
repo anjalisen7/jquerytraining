@@ -13,12 +13,13 @@
   <p id="demo"></p>
    <script>
        
-    var fruits = ["banana","apple","kiwi"];
-            
+    var fruits = ["banana","apple","kiwi","peach","pulm"];
+    document.getElementById("demo").innerHTML= fruits;
+   
            function add()
            {    
-              
-               document.getElementById("demo").innerHTML= fruits.join(" / ");
+            fruits.pop();
+               document.getElementById("demo").innerHTML= fruits;
            }
  </script>
 </body>
