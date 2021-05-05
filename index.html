@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shift()</title>
+    <title>ushift()</title>
 </head>
 <body>
-         <!-------<input type ="text" id="txt">--->
-    <button type="button" id="btn" onclick="shift()">dlt</button>
+         <input type ="text" id="txt">
+    <button type="button" id="btn" onclick="ushift()">add</button>
   <p id="demo"></p>
   <p id="demo1">:</p>
    <script>
@@ -17,11 +17,11 @@
     var fruits = ["banana","apple","kiwi","peach","pulm"];
     document.getElementById("demo").innerHTML= fruits;
    
-           function shift()
+           function ushift()
            {    
-            //var x= document.getElementById("txt").value;
-            document.getElementById("demo1").innerHTML=  "dlt :" + fruits.shift();
-            document.getElementById("demo").innerHTML =fruits;
+            var x= document.getElementById("txt").value;
+            document.getElementById("demo1").innerHTML=  fruits.unshift(x);
+           document.getElementById("demo").innerHTML =fruits;
             
             
              
