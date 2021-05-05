@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>numericsort()</title>
+    <title>randomsort()</title>
 </head>
 <body>
        <!------<input type ="text" id="txt">-->
-    <button type="button" id="btn" onclick="slice()">add</button>
+    <button type="button" id="btn" onclick="slice()">try it</button>
   <p id="demo"></p>
 <!----- <p id="demo1">:</p>---->
    <script>
        
-    var fruits = [2, 100, 45,24];
+    var fruits = [2, 100, 45,24,67, 34];
     
     
     document.getElementById("demo").innerHTML= fruits;
@@ -22,7 +22,7 @@
            function slice()
            {    
           
-            document.getElementById("demo").innerHTML= fruits.sort(function(a,b) {return b-a});
+            document.getElementById("demo").innerHTML= fruits.sort(function(a,b) {return 0.5 -Math.random()});
             document.getElementById("demo").innerHTML= fruits;
            }
           
