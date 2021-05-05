@@ -5,30 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slice()</title>
+    <title>reverse()</title>
 </head>
 <body>
        <!------<input type ="text" id="txt">-->
-    <button type="button" id="btn" onclick="slice()">add</button>
+    <button type="button" id="btn" onclick="slice()" ondblclick="reverse()">add</button>
   <p id="demo"></p>
 <!----- <p id="demo1">:</p>---->
    <script>
        
     var fruits = ["apple", "grapes", "jamun","litchi"];
-    var veg =["cabbage", "onion","chilly"];
-    var dryfruits=["almonds","raisins","walnuts"]
-    v
+    
+    
     document.getElementById("demo").innerHTML= fruits;
    
            function slice()
            {    
           
-            document.getElementById("demo").innerHTML= fruits.slice(1);
-          
-            
-            
-             
+            document.getElementById("demo").innerHTML= fruits.sort();
            }
+           function reverse(){
+            document.getElementById("demo").innerHTML= fruits.reverse();
+           }
+            
  </script>
 </body>
 </html>
