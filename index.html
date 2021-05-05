@@ -11,6 +11,7 @@
    
     <button type="button" id="btn" onclick="add()">add</button>
   <p id="demo"></p>
+  <p id="demo1">:</p>
    <script>
        
     var fruits = ["banana","apple","kiwi","peach","pulm"];
@@ -18,7 +19,7 @@
    
            function add()
            {    
-            fruits.pop();
+            document.getElementById("demo1").innerHTML=  "deleted value is:" + fruits.pop();
                document.getElementById("demo").innerHTML= fruits;
            }
  </script>
