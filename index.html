@@ -8,20 +8,21 @@
     <title>ushift()</title>
 </head>
 <body>
-         <input type ="text" id="txt">
-    <button type="button" id="btn" onclick="ushift()">add</button>
+       <!------<input type ="text" id="txt">-->
+    <button type="button" id="btn" onclick="splicing()">add</button>
   <p id="demo"></p>
-  <p id="demo1">:</p>
+<!----- <p id="demo1">:</p>---->
    <script>
        
     var fruits = ["banana","apple","kiwi","peach","pulm"];
     document.getElementById("demo").innerHTML= fruits;
    
-           function ushift()
+           function splicing()
            {    
             var x= document.getElementById("txt").value;
-            document.getElementById("demo1").innerHTML=  delete fruits[2];
-           document.getElementById("demo").innerHTML =fruits;
+            document.getElementById("demo").innerHTML=   fruits.splice(2,0, "jamun","grapes");
+            document.getElementById("demo").innerHTML=   fruits;
+          
             
             
              
