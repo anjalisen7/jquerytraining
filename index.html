@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>join()</title>
+    <title>push()</title>
 </head>
 <body>
-   
+  
     <button type="button" id="btn" onclick="add()">add</button>
   <p id="demo"></p>
   <p id="demo1">:</p>
@@ -19,8 +19,10 @@
    
            function add()
            {    
-            document.getElementById("demo1").innerHTML=  "deleted value is:" + fruits.pop();
-               document.getElementById("demo").innerHTML= fruits;
+           
+            document.getElementById("demo1").innerHTML=  "length  is:" + fruits.push(x);
+            
+             
            }
  </script>
 </body>
