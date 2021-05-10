@@ -11,12 +11,12 @@
 
     <script>
       var numbers = [23, 35, 45, 67, 65];
-      var sum = numbers.reduceRight(ary);
+      var sum = numbers.every(ary);
       
-      document.getElementById("demo").innerHTML = "The sum is " + sum;
+      document.getElementById("demo").innerHTML =  "All over 30 is:"+ sum;
       
-      function ary(total, value) {
-        return total + value;
+      function ary(value) {
+        return value<30;
       }
       </script>
     </script>
