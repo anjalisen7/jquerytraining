@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>array.map()</title>
+    <title>array.filter()</title>
 </head>
 <body>
     <p id="demo"></p>
 
     <script>
                
-    var numbers = [32, 45, 65, 67, 87, 54];
+    var numbers =[32, 45, 65, 67, 87, 54];
     
-     num2 = numbers.map(myFunction);
-     document.getElementById("demo").innerHTML =  "return value is:" +"<br>"+ num2;
+     var  over65 = numbers.filter(myFunction);
+     document.getElementById("demo").innerHTML =  "over 65 value is:" +"<br>"+ over65;
      
     
-    function myFunction(value, index, array) {
-      return value *2;
+    function myFunction(value) {
+      return  value>65;
     }
     </script>
 
