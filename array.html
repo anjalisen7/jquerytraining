@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>array.reduce()</title>
+    <title>array()</title>
 </head>
 <body>
     <p id="demo"></p>
 
     <script>
       var numbers = [23, 35, 45, 67, 65];
-      var sum = numbers.every(ary);
+      var sum = numbers.some(ary);
       
       document.getElementById("demo").innerHTML =  "All over 30 is:"+ sum;
       
       function ary(value) {
-        return value<30;
+        return value>30;
       }
       </script>
     </script>
