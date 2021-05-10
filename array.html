@@ -10,12 +10,15 @@
     <p id="demo"></p>
 
     <script>
-      var stu = ["pooja","kanchan","kriti","rahiel","raakib"];
-      var sum = stu.lastIndexOf("kriti");
+      var numbers = [23, 35, 45, 67, 65];
+      var sum = numbers.find(ary);
       
-      document.getElementById("demo").innerHTML =  "index value is :"+ (sum+1);
+      document.getElementById("demo").innerHTML =  "first greater value of 30 is:"+ sum;
       
-     
+      function ary(value) {
+        return value>30;
+      }
+      </script>
     </script>
 
 
