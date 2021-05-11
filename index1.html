@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boolean</title>
+    <title>comparison</title>
 </head>
 <body>
      <p id="demo"></p>
+     <label>enter numbers</label>
      <input type="text" id="txt">
-     <button type="button" id="btn" onclick="bool()" >add</button>
+     <button type="button" id="btn" onclick="bool()" >ok</button>
        
 
-     <script>
-              var x= Boolean(100/25);
-              var y=  x.valueOf();
-              document.getElementById("demo").innerHTML= y; 
-
+     <script>  
+      function bool(){
+             var x = document.getElementById("txt").value;
+             if (x>20){
+                  document.getElementById("demo").innerHTML= "its greater than 20:"
+             }
+             else{
+                  document.getElementById("demo").innerHTML ="less than 20:"
+             }
+          }
      </script>
 
 
