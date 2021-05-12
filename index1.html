@@ -7,7 +7,9 @@
     <title>dispaly</title>
 </head>
 <body>
+      <div  id= "demo1"style= "height: 40px; width:150px; background-color: brown;">
      <p id="demo"> welcome to the coding world!</p>
+    </div><br>
      <label>press ok!</label>
     
      <button type="button" id="btn" onclick="italic()">ok</button>
@@ -15,9 +17,12 @@
 
       <script>
         function italic(){
-             var it= "welcome to the coding world";
-             document.getElementById("demo").style= "color:teal;border : solid; font-family: cursive; background-color:skyblue; width:250px; text-decoration: underline";
-        }
+            var element = document.getElementById("demo1");
+        element.style.opacity = "0.2";
+            }
+
+             
+        
            
       </script>
      
