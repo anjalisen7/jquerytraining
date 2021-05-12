@@ -11,19 +11,23 @@
         <br><br>
     
     <br>
+     <input type ="text" id="txt">
      <label>press ok!</label>
     
      <button type="button" id="btn" onclick="italic()">ok</button>
-     <p id="demo"></p>
+     <ul id="demo" style="height: 20px;">
+         
+     </ul>
     </div>
        
 
       <script>
         function italic(){
-            var x= document.createElement('p');
-             x.textContent = "hum honge kamyab!"
+             var todo = document.getElementById("txt").value;
+            var x= document.createElement('li');
+             x.textContent = todo;
              var add =document.getElementById("demo");
-              add.after(x);
+              add.before(x);
            
             }
 
