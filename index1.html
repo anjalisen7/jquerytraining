@@ -16,11 +16,11 @@
      <script>  
           function te(){
                
-        var date= new Date();
-        var day = date.getDay();
-        var month = date.getMonth()+ 1;
-        var year = date.getFullYear();
-        document.getElementById("demo").innerHTML= ("<br>"+" Date is:" + day+ "/"+ month+ "/"+year);
+        var today= new Date();
+        var h = today.getHours();
+        var min = today.getMinutes()+ 1;
+        var sec = today.getSeconds();
+        document.getElementById("demo").innerHTML= ("<br>"+" Current Time:" + h+ ":"+ min+ ":"+sec);
           }
           
       
