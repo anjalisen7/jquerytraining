@@ -8,18 +8,23 @@
 </head>
 <body>
       <div  id= "demo1"style= "height: 40px; width:150px; background-color: brown;">
-     <p id="demo"> welcome to the coding world!</p>
-    </div><br>
+        <br><br>
+    
+    <br>
      <label>press ok!</label>
     
      <button type="button" id="btn" onclick="italic()">ok</button>
+     <p id="demo"></p>
+    </div>
        
 
       <script>
         function italic(){
-            var x= document.getElementById("demo1");
-            var attri= x.attributes;
-            console.log(attri);
+            var x= document.createElement('p');
+             x.textContent = "hum honge kamyab!"
+             var add =document.getElementById("demo");
+              add.after(x);
+           
             }
 
              
