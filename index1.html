@@ -8,20 +8,15 @@
    
 </head>
 <body>
-   <p> data is defined by the function</p>
-     <input type="text" id="txt">
-      <button type="button" onclick="my()">ok</button>
-      <br> <br>
-      <div style="border:brown solid 3px; height:60px; width:140px;">
-          <p id ="demo"></p>
-      </div>
-    
+      <a name="kim" href="#">DATA</a><br>
+      <a name="sim" href="#">OPTION</a><br>
+      <a name="jim" href="#">ECMA</a><br>
+      
+      <button type="button" onclick="my()" >click</button>
+      <p id="demo"></p>
    <script>
           function my(){
-         var x =document.getElementsByTagName("p");
-         var y = document.getElementById("txt").value;
-         document.getElementById("demo").innerHTML =x[0].innerHTML;
-       
+            document.getElementById("demo").innerHTML = "Number of anchors:"+ document.anchors.length;
           }
    </script>
      
