@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dispaly</title>
+   
 </head>
 <body>
-         <img id="image" src ="th (1).jpg">
-            <button type="button" id="btn" onclick="img()">click</button>
-      <script>
-        function img(){
-             
-                  document.getElementById("image").src= "th.jpg";
-            }
-
-             
-        
-           
-      </script>
+   <p> data is defined by the function</p>
+     <input type="text" id="txt">
+      <button type="button" onclick="my()">ok</button>
+      <br> <br>
+      <div style="border:brown solid 3px; height:60px; width:140px;">
+          <p id ="demo"></p>
+      </div>
+    
+   <script>
+          function my(){
+         var x =document.getElementsByTagName("p");
+         var y = document.getElementById("txt").value;
+         document.getElementById("demo").innerHTML =x[0].innerHTML;
+       
+          }
+   </script>
      
 
 
