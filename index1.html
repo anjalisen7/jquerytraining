@@ -8,7 +8,7 @@
    
 </head>
 <body>
-       enter days <br><input type="text" id="text">
+       enter alphabets:<br><input type="text" id="text">
       <button type="button" onclick="my()" >click</button>
       <p id="demo"></p>
    <script>
@@ -16,11 +16,22 @@
           function my()
           {
               var x= document.getElementById("text").value;
-            if (x=="sunday"){
-               document.getElementById("demo").innerHTML ="today is sunday";
+            if (x=="a"){
+               document.getElementById("demo").innerHTML ="its vowel";
             }
+             else if(x=="e"){
+               document.getElementById("demo").innerHTML ="its vowel";
+             }else if(x=="i"){
+              document.getElementById("demo").innerHTML ="its vowel";
+             }else if(x=="o"){
+              document.getElementById("demo").innerHTML ="its vowel";
+             }else if(x=="u"){
+              document.getElementById("demo").innerHTML ="its vowel";
+             } else if(x== ""){
+               alert("please write something");
+             }
              else{
-               document.getElementById("demo").innerHTML ="wait for the sunday";
+              document.getElementById("demo").innerHTML ="its consonanats";
              }
           }
    </script>
