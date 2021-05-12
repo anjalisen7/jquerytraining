@@ -8,31 +8,19 @@
    
 </head>
 <body>
-       enter alphabets:<br><input type="text" id="text">
+     
       <button type="button" onclick="my()" >click</button>
       <p id="demo"></p>
    <script>
             
           function my()
           {
-              var x= document.getElementById("text").value;
-            if (x=="a"){
-               document.getElementById("demo").innerHTML ="its vowel";
-            }
-             else if(x=="e"){
-               document.getElementById("demo").innerHTML ="its vowel";
-             }else if(x=="i"){
-              document.getElementById("demo").innerHTML ="its vowel";
-             }else if(x=="o"){
-              document.getElementById("demo").innerHTML ="its vowel";
-             }else if(x=="u"){
-              document.getElementById("demo").innerHTML ="its vowel";
-             } else if(x== ""){
-               alert("please write something");
-             }
-             else{
-              document.getElementById("demo").innerHTML ="its consonanats";
-             }
+             if(new Date().getDay()<6){
+                document.getElementById("demo").innerHTML ="its not sunday"
+             } else{
+               document.getElementById("demo").innerHTML ="its sunday";
+             } 
+            
           }
    </script>
      
