@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comparison</title>
+    <title>dispaly</title>
 </head>
 <body>
      <p id="demo"></p>
      <label>enter numbers</label>
      <input type="text" id="txt">
-     <button type="button" id="btn" onclick="bool()" >ok</button>
+     <button type="button" id="btn" onclick="te()">ok</button>
        
 
      <script>  
-      function bool(){
-             var x = document.getElementById("txt").value;
-              
-      document.getElementById("demo").innerHTML = x<25;
-             
-
+          function te(){
+               
+        var time= new Date();
+        document.getElementById("demo").innerHTML= time;
           }
+          
+      
      </script>
 
 
