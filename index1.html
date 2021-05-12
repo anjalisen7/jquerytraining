@@ -7,43 +7,12 @@
     <title>dispaly</title>
 </head>
 <body>
-      <input type ="text" id="txt"><br><br>
-     
-     <table   border="2" colspan="1" cellspacing="2">
-       <tr>
-           <th>student name</th>
-           <th> student Id</th>
-           <th>Age</th>
-           <th>Contact</th>
-       </tr>
-       <tr>
-           <td id="demo1"> anjali sen</td>
-           <td> 0014</td>
-           <td>28</td>
-           <td> 786554432</td>
-       </tr>
-       <tr>
-        <td id="name"> prem</td>
-        <td id="id"> 0016</td>
-        <td id="age">23</td>
-        <td id="phone"> 2323232</td>
-    </tr><tr>
-        <td> kisan </td>
-        <td> 0021</td>
-        <td>25</td>
-        <td> 123456</td>
-    </tr>
-
-     </table><br><br>
-    <button type="button" id="btn" onclick="tim()">ok</button>
-     
-    </div>
-       
-
+         <img id="image" src ="th (1).jpg">
+            <button type="button" id="btn" onclick="img()">click</button>
       <script>
-        function tim(){
-             var x = document.getElementById("txt").value;
-                  document.getElementById("phone").innerHTML =x;
+        function img(){
+             
+                  document.getElementById("image").src= "th.jpg";
             }
 
              
