@@ -8,16 +8,19 @@
 </head>
 <body>
      <p id="demo"></p>
-     <label>enter numbers</label>
-     <input type="text" id="txt">
+     <label>press ok!</label>
+    
      <button type="button" id="btn" onclick="te()">ok</button>
        
 
      <script>  
           function te(){
                
-        var time= new Date();
-        document.getElementById("demo").innerHTML= time;
+        var date= new Date();
+        var day = date.getDay();
+        var month = date.getMonth()+ 1;
+        var year = date.getFullYear();
+        document.getElementById("demo").innerHTML= ("<br>"+" Date is:" + day+ "/"+ month+ "/"+year);
           }
           
       
