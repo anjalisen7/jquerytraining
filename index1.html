@@ -8,15 +8,20 @@
    
 </head>
 <body>
-      <a name="kim" href="#">DATA</a><br>
-      <a name="sim" href="#">OPTION</a><br>
-      <a name="jim" href="#">ECMA</a><br>
-      
+       enter days <br><input type="text" id="text">
       <button type="button" onclick="my()" >click</button>
       <p id="demo"></p>
    <script>
-          function my(){
-            alert(document.documentElement.innerHTML);
+            
+          function my()
+          {
+              var x= document.getElementById("text").value;
+            if (x=="sunday"){
+               document.getElementById("demo").innerHTML ="today is sunday";
+            }
+             else{
+               document.getElementById("demo").innerHTML ="wait for the sunday";
+             }
           }
    </script>
      
