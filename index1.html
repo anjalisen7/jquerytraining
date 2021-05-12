@@ -7,28 +7,20 @@
     <title>dispaly</title>
 </head>
 <body>
-      <div  id= "demo1"style= "height: 40px; width:150px; background-color: brown;">
-        <br><br>
+      <input type ="text" id="txt">
+      <label>press ok!</label>
     
-    <br>
-     <input type ="text" id="txt">
-     <label>press ok!</label>
-    
-     <button type="button" id="btn" onclick="italic()">ok</button>
-     <ul id="demo" style="height: 20px;">
-         
-     </ul>
+     <button type="button" id="btn" onclick="first()">ok</button>
+     <p id="demo">
+         data manipulation
+     </p>
     </div>
        
 
       <script>
-        function italic(){
+        function first(){
              var todo = document.getElementById("txt").value;
-            var x= document.createElement('li');
-             x.textContent = todo;
-             var add =document.getElementById("demo");
-              add.before(x);
-           
+                  document.getElementById("demo").innerHTML = "paragraph is changed by:" +"<br>"+todo;
             }
 
              
