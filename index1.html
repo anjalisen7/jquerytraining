@@ -7,32 +7,19 @@
     <title>dispaly</title>
 </head>
 <body>
-     <p id="demo"></p>
+     <p id="demo"> welcome to the coding world</p>
      <label>press ok!</label>
     
-     <button type="button" id="btn">ok</button>
+     <button type="button" id="btn" onclick="italic()">ok</button>
        
 
       <script>
-      window.onload=function(){getTime();}
-     function getTime(){  
-     var today=new Date();  
-     var h=today.getHours();  
-     var m=today.getMinutes();  
-     var s=today.getSeconds();  
-      m=checkTime(m);  
-       s=checkTime(s);  
-      document.getElementById('demo').innerHTML=h+":"+m+":"+s;  
-      setTimeout(function(){getTime()},1000);  
-     }
-       function checkTime(i){  
-        if (i<10){  
-      i="0" + i;  
-       }  
-    return i;  
-      }  
-   
-     </script>
+        function italic(){
+             var it= "welcome to the coding world";
+             document.getElementById("demo").innerHTML= it.italics();
+        }
+           
+      </script>
      
 
 
