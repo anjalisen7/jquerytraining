@@ -10,18 +10,20 @@
 <body>
      
       <button type="button" onclick="my()" >click</button>
-      <p id="demo"></p>
+      <ol id="demo">
+        
+        </ol>
    <script>
             
           function my()
           {    
                 var y ="";
-                 var student =["name :anjali", "id:14", "ph:pink" , "fin: 2" ];
+                 var fruits =["jamun", "peach","plum","mango","grapes"];
               
               var i ;
-               var len = student.length;
-            for (i = 0; i <len; i++) {
-            y += student[i]+ "<br>";
+              
+            for (i in fruits) {
+            y += fruits [i]+ "<br>";
                                      }
                document.getElementById("demo").innerHTML = y;
           }
