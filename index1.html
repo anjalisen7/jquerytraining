@@ -8,26 +8,17 @@
    
 </head>
 <body>
-  
-            
-         
-                    <form onsubmit="return my()">
-                        <p>Please insert  values:</p>
-                       <input type="text" id="text">
-                       <input type="submit" value="Submit">
-                       <ul id ="demo"></ul>
-                      </form>
-                   <script>
-                       var items = [];
-
-                       function my() {
-                     var x = document.getElementById('text').value;
-                           items.push(x);
-                         document.getElementById("demo").innerHTML =(items);
-                          return false; 
-                                }
-     
-     </script>
+                    <input type ="text" id="text" oninput="my()">
+                    <p id="demo"></p>
+        <script>
+                   function my(){
+                     text="";
+                  var x = document.getElementById('text').value;
+                    for (let i of x)
+                     text+= i;
+                    document.getElementById("demo").innerHTML =text;
+                   } 
+         </script>
     
 </body>
 </html>
