@@ -8,17 +8,18 @@
    
 </head>
 <body>
-      
+     
       <button type="button" onclick="my()" >click</button>
       <p id="demo"></p>
    <script>
             
           function my()
           {    
-              var y = "";
-              var i;
-            for (i = 1; i <= 10; i++) {
-            y +=  "2" + "*" + i + "=" +  i * 2 + "<br>";
+                var y ="";
+              
+              var i ;
+            for (i = 1; i <= 25; i++) {
+            y +=  "square of:" + i ** 2 + "<br>";
                                      }
                document.getElementById("demo").innerHTML = y;
           }
