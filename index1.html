@@ -8,23 +8,25 @@
    
 </head>
 <body>
-     
+       <input type="text" id="text">
       <button type="button" onclick="my()" >click</button>
       <p id="demo"></p>
    <script>
             
           function my()
-          {    const today =12
-             if(today!=34){
-                document.getElementById("demo").innerHTML ="its sunday"
-             } else{
-               document.getElementById("demo").innerHTML ="monday aane wala h";
-             } 
-            
+          {    
+            var text = "";
+              var i;
+            for (i = 0; i < 5; i++) {
+            text += "The number is " + i + "<br>";
+                                     }
+               document.getElementById("demo").innerHTML = text;
           }
+
+          
    </script>
      
-
-
+     </script>
+    
 </body>
 </html>
