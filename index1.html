@@ -8,28 +8,24 @@
    
 </head>
 <body>
-     
-      <button type="button" onclick="my()" >click</button>
-      <ol id="demo">
-        
-        </ol>
-   <script>
+  
             
-          function my()
-          {    
-                var y ="";
-                 var fruits =["jamun", "peach","plum","mango","grapes"];
-              
-              var i ;
-              
-            for (i in fruits) {
-            y += fruits [i]+ "<br>";
-                                     }
-               document.getElementById("demo").innerHTML = y;
-          }
+         
+                    <form onsubmit="return my()">
+                        <p>Please insert  values:</p>
+                       <input type="text" id="text">
+                       <input type="submit" value="Submit">
+                       <ul id ="demo"></ul>
+                      </form>
+                   <script>
+                       var items = [];
 
-          
-   </script>
+                       function my() {
+                     var x = document.getElementById('text').value;
+                           items.push(x);
+                         document.getElementById("demo").innerHTML =(items);
+                          return false; 
+                                }
      
      </script>
     
