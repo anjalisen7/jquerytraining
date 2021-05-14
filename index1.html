@@ -15,16 +15,14 @@
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                        var x= document.getElementById("text").value;
-                        var y= document.getElementById("text2").value;
-                     if( x==y){
-                        document.getElementById("demo").innerHTML = "x equal to y:" +x+"="+y;
-                     }else if (x>y){
-                        document.getElementById("demo").innerHTML ="x greater than y" +x+ ">"+y;
+                        var x= new Date().getHours();
+                     if(x <12 ){
+                        document.getElementById("demo").innerHTML ="its noon!😎";
                      }
-                     else{
-                       document.getElementById("demo").innerHTML = " x less than y"+ x+"<"+y;
+                     else if(x>12){
+                        document.getElementById("demo").innerHTML =  "its morning🎴";
                      }
+                     
                    }
                     
          </script>
