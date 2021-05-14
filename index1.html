@@ -8,20 +8,23 @@
    
 </head>
 <body>               
-                 <input type ="text" id="text">
-                    <p id="demo"></p>
-                    <p id="demo1"></p>
+                    
+                    <input type="text" id="text">
                     <button type="button" onclick="my()">click</button>
+                      <ul id="demo"></ul>
         <script>
-                var x ="";
-                 var i=1;
                    function my(){
-                     while(i<20){
-                         x += i + "<br>";
-                         i++;
-                     }
-                     document.getElementById("demo").innerHTML = x;
-                   } 
+                      var x =document.getElementById("text").value;
+                  var i=0;
+                  var text= "";
+                   while(i<=9)
+                   {
+                      i++;
+                     text += x +"*" + i +"=" +  x* i +"<br>";
+                   }
+                    document.getElementById("demo").innerHTML =text;
+                   }
+                    
          </script>
     
 </body>
