@@ -7,15 +7,22 @@
     <title>dispaly</title>
    
 </head>
-<body>
+<body>               
+                 <input type ="text" id="text">
                     <p id="demo"></p>
+                    <p id="demo1"></p>
                     <button type="button" onclick="my()">click</button>
         <script>
                    function my(){
-                     text="";
-                  var x = ["name:anjali", "id:34", "case:23", "position:first"];
-                    for (let i of x[1]) 
-                     text+= i;
+                     var x =document.getElementById("text").value;
+                      if (x<=50)
+                      {
+                        document.getElementById("demo1").innerHTML= "value is less than 50"
+                      }
+                    
+                    text="";
+                   for (let i of x) 
+                   text+= i;
                     document.getElementById("demo").innerHTML = " x"+ "=" + text;
                    } 
          </script>
