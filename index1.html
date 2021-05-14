@@ -10,17 +10,16 @@
 <body>               
                     
                     <input type ="text" id="text">
-                    <input type ="text" id= "text2">
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                        var x= new Date().getHours();
-                     if(x <12 ){
-                        document.getElementById("demo").innerHTML ="its noon!😎";
+                        var x= document.getElementById("text").value;
+                     if(x >18 ){
+                        document.getElementById("demo").innerHTML ="you can vote!😎";
                      }
-                     else if(x>12){
-                        document.getElementById("demo").innerHTML =  "its morning🎴";
+                     else if(x<18){
+                        document.getElementById("demo").innerHTML =  "sorry you are not eligible gor vote👶";
                      }
                      
                    }
