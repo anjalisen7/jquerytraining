@@ -9,23 +9,22 @@
 </head>
 <body>               
                     
-                    
+                    <input type ="text" id="text">
+                    <input type ="text" id= "text2">
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                      var x=document.getElementById("text").value;
-                  var i=2;
-                  
-                  
-                   do{
-                    document.write( "even value:"+ i +" </br>");
-                    i= i +2;
-                   }
-               
-                   while(i<50)
-                      
-                   
+                        var x= document.getElementById("text").value;
+                        var y= document.getElementById("text2").value;
+                     if( x==y){
+                        document.getElementById("demo").innerHTML = "x equal to y:" +x+"="+y;
+                     }else if (x>y){
+                        document.getElementById("demo").innerHTML ="x greater than y" +x+ ">"+y;
+                     }
+                     else{
+                       document.getElementById("demo").innerHTML = " x less than y"+ x+"<"+y;
+                     }
                    }
                     
          </script>
