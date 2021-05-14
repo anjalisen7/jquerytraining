@@ -8,15 +8,15 @@
    
 </head>
 <body>
-                    <input type ="text" id="text" oninput="my()">
                     <p id="demo"></p>
+                    <button type="button" onclick="my()">click</button>
         <script>
                    function my(){
                      text="";
-                  var x = document.getElementById('text').value;
+                  var x = ["data mining", "data encaptulation","inheritance"];
                     for (let i of x)
-                     text+= i;
-                    document.getElementById("demo").innerHTML =text;
+                     text+= i + "<br>";
+                    document.getElementById("demo").innerHTML = text;
                    } 
          </script>
     
