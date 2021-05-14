@@ -9,19 +9,20 @@
 </head>
 <body>               
                     
-                    <input type="text" id="text">
+                   
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                      var x =document.getElementById("text").value;
-                  var i=0;
+                  var i=1;
                   var text= "";
-                   while(i<=9)
-                   {
-                      i++;
-                     text += x +"*" + i +"=" +  x* i +"<br>";
+                   do{
+                    text +=  i +"<br>";
+                    i++;
                    }
+               
+                   while(i<=10)
+                   
                     document.getElementById("demo").innerHTML =text;
                    }
                     
