@@ -9,19 +9,18 @@
 </head>
 <body>               
                     
-                    <input type ="text" id="text">
+                   
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                        var x= document.getElementById("text").value;
-                     if(x >18 ){
-                        document.getElementById("demo").innerHTML ="you can vote!😎";
-                     }
-                     else if(x<18){
-                        document.getElementById("demo").innerHTML =  "sorry you are not eligible gor vote👶";
-                     }
-                     
+                        text ="";
+                        
+                        for (i =0; i<10; i++){
+                           if (i==8) { break;}
+                           text += i+ "<br>";
+                        }
+                     document.getElementById("demo").innerHTML = text;
                    }
                     
          </script>
