@@ -7,18 +7,26 @@
     <title>dispaly</title>
    
          </head>
-          <body onload="fun()">               
+          <body>               
                  
-                   
-                 
-                 
+                 <h1> menu is here!📄</h1>
+                find your food here <input type="text" id="text">
                  <button type="button" onclick="fun()">click</button>
+                 <h3 id="error" style="color: red;"> </h3>
+                 <h3 id="result" style="color: green;"></h3>
                  
-                  <script>
+                  <script>   
                   function fun(){
-                    alert("hello! welcome in my world");
-                  } 
-                            
+                      var menu =["fries", "burger","veg-burger","hot-dog","ice-cream","softdrinks","coffee","noodles","garlic-bread"]
+                         var x= document.getElementById("text").value;
+                        if(menu.indexOf(x)!==-1){
+                            document.getElementById("result").innerHTML ="yes food is available:";
+                        }else{
+                            document.getElementById("error").innerHTML ="oops! sorry u can choose something else"
+                        } 
+                    }
                   </script>
+                            
+                  
 </body>
 </html>
