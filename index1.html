@@ -9,19 +9,28 @@
 </head>
 <body>               
                     
-                 enter the number:  <input type="text" id="text">
+                    <h1> click here for the operations</h1>
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                            const num =  parseInt(document.getElementById("text").value);
-                             if(num %2==0){
-                                document.getElementById("demo").innerHTML =("its  a even number" +"<br>" + num);
-                             }
-                               else{
-                                document.getElementById("demo")= ("the value is odd" + num);
-                               }
+                          const operator = prompt("select operator(either + , - ,* or %):");
+                            const num1 =  parseFloat(prompt("enter firsr number"));
+                            const num2 =  parseFloat(prompt("enter second number"));
                             
+                             if(operator == '+'){
+                                result = "result is:"+ num1 + num2;
+                               
+                             }
+                               else if(operator == "-"){
+                                result=   "result is:" + num1 - num2;
+                               } else if(operator == "*"){
+                                result = "result is:" +num1 * num2;
+                               } else if(operator == "%")
+                               {
+                                result = "result is:" + num1 % num2;
+                               }
+                              document.getElementById("demo").innerHTML = result;
                                
                               }
          </script>
