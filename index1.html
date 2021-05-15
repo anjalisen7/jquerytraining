@@ -9,19 +9,21 @@
 </head>
 <body>               
                     
-                   
+                 enter the number:  <input type="text" id="text">
                     <button type="button" onclick="my()">click</button>
                       <ul id="demo"></ul>
         <script>
                    function my(){
-                        text ="";
-                        
-                        for (i =0; i<10; i++){
-                           if (i==6) { continue;}
-                           text += i+ "<br>";
-                        }
-                     document.getElementById("demo").innerHTML = text;
-                   }
+                            const num =  parseInt(document.getElementById("text").value);
+                             if(num>0){
+                                document.getElementById("demo").innerHTML = "its positive number";
+                             }
+                               if( num==0){
+                                document.getElementById("demo").innerHTML ="the value is zerro";
+                              } if(num <0)
+                               document.getElementById("demo").innerHTML = "the value is negative";
+                               }  
+                               
                     
          </script>
     
