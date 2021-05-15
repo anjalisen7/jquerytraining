@@ -15,16 +15,15 @@
         <script>
                    function my(){
                             const num =  parseInt(document.getElementById("text").value);
-                             if(num>0){
-                                document.getElementById("demo").innerHTML = "its positive number";
+                             if(num %2==0){
+                                document.getElementById("demo").innerHTML =("its  a even number" +"<br>" + num);
                              }
-                               if( num==0){
-                                document.getElementById("demo").innerHTML ="the value is zerro";
-                              } if(num <0)
-                               document.getElementById("demo").innerHTML = "the value is negative";
-                               }  
+                               else{
+                                document.getElementById("demo")= ("the value is odd" + num);
+                               }
+                            
                                
-                    
+                              }
          </script>
     
 </body>
