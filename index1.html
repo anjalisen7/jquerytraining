@@ -7,53 +7,17 @@
     <title>dispaly</title>
    
          </head>
-          <body>              
-                   <h1 style="color: tomato; text-align: center; font-family: 'Courier New', Courier, monospace;">simple calculator</h1> 
-              <center><div style ="color: gray; background-color: floralwhite; height:300px; width:500px; margin: 80px;">
-                first value<input type="text" id="text">
-                second value<input type ="text" id ="text2"><br>
-                <br><br><br>
-                 <h2>select operator</h2>
-                 <button type="button" onclick="fun()">ADD</button>
-                 <button type="button" onclick="sub()">SUB</sub></button>
-                 <button type="button" onclick="multi()">multiply</button>
-                 <button type="button" onclick="divi()">division</button>
-                
-                 <hr><hr>
-                 <h3 id="result" style="color: green;"></h3>
-                 </div></center>
-                
-                
-                 
-                  <script>   
-                  function fun(){
-                                var x= parseInt(document.getElementById("text").value);
-                                var y = parseInt(document.getElementById("text2").value);
-                                 var z= parseInt ( x + y);
-                                 
-                                 document.getElementById("result").innerHTML=("sum is:"+ z);
-                  }
-                  function sub(){
-                                var x= parseInt(document.getElementById("text").value);
-                                var y = parseInt(document.getElementById("text2").value);
-                                 var z= parseInt ( x-y);
-                                 
-                                 document.getElementById("result").innerHTML=("value is:"+ z);
-                  }
-                  function multi(){
-                                var x= parseInt(document.getElementById("text").value);
-                                var y = parseInt(document.getElementById("text2").value);
-                                 var z= parseInt ( x * y);
-                                 
-                                 document.getElementById("result").innerHTML=("value is:"+ z);
-                  }     function divi(){
-                                var x= parseInt(document.getElementById("text").value);
-                                var y = parseInt(document.getElementById("text2").value);
-                                 var z= parseInt ( x / y);
-                                 
-                                 document.getElementById("result").innerHTML=("value is:"+ z);
-                  }       
-                  
+          <body>         <p id="demo"></p>      
+                  <script> 
+
+                  var person ="khushboo",
+                       id= 34,
+                        add= "29,B-block",
+                        tel=125923232,
+                        color="whitish",
+                        height= 5.4;
+                        document.getElementById("demo").innerHTML = add;
+                      
                   </script>
                             
                   
