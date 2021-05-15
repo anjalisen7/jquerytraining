@@ -9,30 +9,32 @@
 </head>
 <body>               
                     
-                    <h1> click here for the operations</h1>
-                    <button type="button" onclick="my()">click</button>
-                      <ul id="demo"></ul>
-        <script>
-                   function my(){
-                          const operator = prompt("select operator(either + , - ,* or %):");
-                            const num1 =  parseFloat(prompt("enter firsr number"));
-                            const num2 =  parseFloat(prompt("enter second number"));
-                            
-                             if(operator == '+'){
-                                result = "result is:"+ num1 + num2;
-                               
-                             }
-                               else if(operator == "-"){
-                                result=   "result is:" + num1 - num2;
-                               } else if(operator == "*"){
-                                result = "result is:" +num1 * num2;
-                               } else if(operator == "%")
-                               {
-                                result = "result is:" + num1 % num2;
-                               }
-                              document.getElementById("demo").innerHTML = result;
-                               
-                              }
+                    
+                
+                  enter first number   <input type ="text" id="text"><br><br>
+
+                  enter second number   <input type ="text" id="text1"><br><br>
+                    enter third number <input type ="text" id="text2"><br>
+                    <button type="button" id="btn1"  onclick="large()">click</button>
+                    <p id= "demo"></p>
+          <script>
+                   
+                   function large(){
+                      const num1 = parseFloat(document.getElementById("text").value);
+                      const num2 = parseFloat(document.getElementById("text1").value);
+                      const num3 =parseFloat (document.getElementById("text2").value);
+                      let largest;
+                        if (num1>=num2 && num1>=num3){
+                            largest = num1;
+                        } else if( num2>=num1 && num2>=num3){
+                             largest =num2;
+                        }else if (num3>=num1 && num3>=num2){
+                             largest = num3;
+                        }
+                             document.getElementById("demo").innerHTML ="largest number is:" + largest ;
+
+                     
+                   }
          </script>
     
 </body>
