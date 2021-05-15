@@ -8,14 +8,16 @@
    
          </head>
           <body>               
-
-                <button type="button" id="btn1"  ondblclick="db()">dbclick</button>
+                  <div id="div">
+              
                  <p id= "demo"></p>
+                 </div>
     
                   <script>
-                      function db(){
-                          document.getElementById("demo").innerHTML = "hello your login for this page!";
-                      }
+                    window.onload =function db(){
+                          document.getElementById("div").style ="color: teal; font-family:cursive; font-size:70px; background-color:black; height:160px;"
+                          document.getElementById("demo").innerHTML = "hello your window is load!🙇‍♀️";
+                      }  
                   </script>
 </body>
 </html>
