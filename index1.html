@@ -6,35 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dispaly</title>
    
-</head>
-<body>               
-                    
-                    
-                
-                  enter first number   <input type ="text" id="text"><br><br>
+         </head>
+          <body>               
 
-                  enter second number   <input type ="text" id="text1"><br><br>
-                    enter third number <input type ="text" id="text2"><br>
-                    <button type="button" id="btn1"  onclick="large()">click</button>
-                    <p id= "demo"></p>
-          <script>
-                   
-                   function large(){
-                      const num1 = parseFloat(document.getElementById("text").value);
-                      const num2 = parseFloat(document.getElementById("text1").value);
-                      const num3 =parseFloat (document.getElementById("text2").value);
-                      let hcf; 
-                       for (i=0; i<= num1 && i<=num2 & i<=num3; i++){
-                        if (num1 % i== 0 && num2 % i==0 && num3% i ==0){
-                            hcf= i;
-                      
-                        }
-                    }
-                             document.getElementById("demo").innerHTML = "hcf of" + hcf ;
-
-                     
-                   }
-         </script>
+                <button type="button" id="btn1"  onclick="document.write(22+23*5)">click</button>
+                 <p id= "demo"></p>
     
 </body>
 </html>
