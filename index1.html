@@ -8,16 +8,24 @@
    
          </head>
           <body>               
-                  <div id="div">
-              
-                 <p id= "demo"></p>
-                 </div>
-    
+                 
+                   
+                 
+                 <img id="image" src="th.jpg"><br><br>
+                 <button type="button" onclick="move()">click</button>
+                 
                   <script>
-                    window.onload =function db(){
-                          document.getElementById("div").style ="color: teal; font-family:cursive; font-size:70px; background-color:black; height:160px;"
-                          document.getElementById("demo").innerHTML = "hello your window is load!🙇‍♀️";
-                      }  
+                   
+                        var img =null;
+                     window.onload = function ok(){
+                              img =document.getElementById("image");
+                             img.style.position='relative';
+                              img.style.left= "50px";
+                        }
+                            function move(){
+                                img.style.left =parseInt(img.style.left) + 100 + 'px';
+                            }
+                            
                   </script>
 </body>
 </html>
