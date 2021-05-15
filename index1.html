@@ -9,8 +9,13 @@
          </head>
           <body>               
 
-                <button type="button" id="btn1"  onclick="document.write(22+23*5)">click</button>
+                <button type="button" id="btn1"  ondblclick="db()">dbclick</button>
                  <p id= "demo"></p>
     
+                  <script>
+                      function db(){
+                          document.getElementById("demo").innerHTML = "hello your login for this page!";
+                      }
+                  </script>
 </body>
 </html>
