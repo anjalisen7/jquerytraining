@@ -7,24 +7,17 @@
     <title>dispaly</title>
    
          </head>
-          <body>               
+          <body onload="fun()">               
                  
                    
                  
-                 <img id="image" src="th.jpg"><br><br>
-                 <button type="button" onclick="move()">click</button>
+                 
+                 <button type="button" onclick="fun()">click</button>
                  
                   <script>
-                   
-                        var img =null;
-                     window.onload = function ok(){
-                              img =document.getElementById("image");
-                             img.style.position='relative';
-                              img.style.left= "50px";
-                        }
-                            function move(){
-                                img.style.left =parseInt(img.style.left) + 100 + 'px';
-                            }
+                  function fun(){
+                    alert("hello! welcome in my world");
+                  } 
                             
                   </script>
 </body>
