@@ -9,26 +9,17 @@
 </head>
 <body>      
           enter year <input type="text" id="text">
-           <input type="button" onclick="divi()" value="submit">
+           <input type="button" onclick="sqrt()" value="submit">
            <p id="demo" style="color: green;"></p>
            <p id="demo1" style="color: red;"></p>
 
       
       <script>
-         function divi(){
+         function sqrt(){
                            var x=document.getElementById("text").value;
-                           if(x%3==0){
-                              document.getElementById("demo").innerHTML ="number is divided by 3";
-                                     }
-                           if (x%7==0){
-                            document.getElementById("demo").innerHTML ="number is divided by 7";
-                                      }
-                            if(x%11==0){
-                              document.getElementById("demo").innerHTML ="number is divided by 11";
-                                       } 
-                            if(x==0){
-                                alert("please enter any number!")
-                                    }      
+                          y = Math.sqrt(x);
+                           document.getElementById("demo").innerHTML ="square root of input number is:" + y;
+                             
                            
                                 
 
