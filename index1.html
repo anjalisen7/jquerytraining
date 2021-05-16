@@ -8,18 +8,24 @@
    
 </head>
 <body>      
-            
+              <h1>click for result:</h1>
            <p id="demo" style="color: green; font-size: 40px;"></p>
-            <button type="button" onclick="Person()">ok</button>
+            <button type="button" onclick="obj()">ok</button>
                         
 
       
       <script>     
-               function Person(){
-                var x = [1,2,3,4,-6];
-                 var y= Math.min.apply(null,x);
-                       document.getElementById("demo").innerHTML="min value is"+(y);
-               }
+                 function obj(){
+                     var x ={ name:"anjali", id:23, 
+                     tel:232323, col:"whitish" ,shape:"oval", surName:"_rj",
+                      person: function(){
+                            return this.name+ "" + this.surName;
+                      }
+                            };
+                            document.getElementById("demo").innerHTML = x.person();
+                          }
+
+               
         </script>
           
                             
