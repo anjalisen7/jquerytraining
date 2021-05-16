@@ -8,17 +8,20 @@
    
 </head>
 <body>      
-          enter year <input type="text" id="text">
+        
            <input type="button" onclick="my_fun()" value="ok">
            <p id="demo" style="color: green;"></p>
          
 
       
       <script>
-         function my_fun( num1 ,num2){
+
+            var x= my_fun(23,45);
+            document.getElementById("demo").innerHTML = "multipy of given num is:"+x;
+            function my_fun( num1 ,num2){
                              return num2 *num1;
-                                    }
-                          
+                                     }
+                         
           
         </script>
           
