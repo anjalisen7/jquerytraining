@@ -8,21 +8,19 @@
    
 </head>
 <body>      
-        
-           <input type="button" onclick="my_fun()" value="ok">
+            
            <p id="demo" style="color: green;"></p>
          
 
       
       <script>
 
-            var x= my_fun(23,45.67,34,67,100);
-            document.getElementById("demo").innerHTML =" max value"+ x;
-            function my_fun( num1 ,num2,num3,num4,num5){
-                               return Math.max(num1,num3,num5, num4);
+            
+            function my_fun(name){
+                               document.getElementById("demo").innerHTML ="hello:=>" + name +"😄" + "<br>"+ "welcome in our page";
                                      }
-                         
-          
+                          let name= prompt ("enter a name:");
+                                   my_fun(name);
         </script>
           
                             
