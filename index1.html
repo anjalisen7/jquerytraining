@@ -9,23 +9,31 @@
 </head>
 <body>      
           enter year <input type="text" id="text">
-           <input type="button" onclick="leap()" value="submit">
+           <input type="button" onclick="divi()" value="submit">
            <p id="demo" style="color: green;"></p>
            <p id="demo1" style="color: red;"></p>
 
       
-        <script>
-             function leap(){
-                      var year=document.getElementById("text").value;
+      <script>
+         function divi(){
+                           var x=document.getElementById("text").value;
+                           if(x%3==0){
+                              document.getElementById("demo").innerHTML ="number is divided by 3";
+                                     }
+                           if (x%7==0){
+                            document.getElementById("demo").innerHTML ="number is divided by 7";
+                                      }
+                            if(x%11==0){
+                              document.getElementById("demo").innerHTML ="number is divided by 11";
+                                       } 
+                            if(x==0){
+                                alert("please enter any number!")
+                                    }      
+                           
+                                
+
+                         }
                       
-                      if (year%100==0 || year %400 ==0 || year%4==0){
-                        document.getElementById("demo").innerHTML ="this year is leap";
-                      } else{
-                        document.getElementById("demo1").innerHTML ="not a leap year";
-                      }
-                     }
-             
-         
           
         </script>
           
