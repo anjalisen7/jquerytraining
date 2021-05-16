@@ -16,10 +16,9 @@
       
       <script>     
                function Person(){
-                var x = [1,2,3,4];
-                var newx=[11,32,45,67,98]
-                 x.push.apply(x, newx);
-                       document.getElementById("demo").innerHTML=(x);
+                var x = [1,2,3,4,-6];
+                 var y= Math.min.apply(null,x);
+                       document.getElementById("demo").innerHTML="min value is"+(y);
                }
         </script>
           
