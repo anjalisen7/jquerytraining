@@ -9,22 +9,16 @@
 </head>
 <body>      
           enter year <input type="text" id="text">
-           <input type="button" onclick="sqrt()" value="submit">
+           <input type="button" onclick="my_fun()" value="ok">
            <p id="demo" style="color: green;"></p>
-           <p id="demo1" style="color: red;"></p>
+         
 
       
       <script>
-         function sqrt(){
-                           var x=document.getElementById("text").value;
-                          y = Math.sqrt(x);
-                           document.getElementById("demo").innerHTML ="square root of input number is:" + y;
-                             
-                           
-                                
-
-                         }
-                      
+         function my_fun( num1 ,num2){
+                             return num2 *num1;
+                                    }
+                          
           
         </script>
           
