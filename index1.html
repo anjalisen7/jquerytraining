@@ -8,22 +8,18 @@
    
 </head>
 <body>      
-            <input type="text" id="text">
-            <button type="button" onclick="add()">ok</button>
-           <p id="demo" style="color: green;"></p>
+            
+           <p id="demo" style="color: green; font-size: 40px;"></p>
+          
          
 
       
       <script>
+           let a =this;
+              document.getElementById("demo").innerHTML=(a);
+               this.name="anjali";
+               document.getElementById("demo").innerHTML=(name);
 
-            
-                    function add (a,b){
-                                 return a+b;
-                                     }
-                                  let num1=parseFloat(prompt("enter first number:"));
-                                  let num2 =parseFloat(prompt("enter second number"));
-                                   let result = add(num1,num2);
-                                    document.getElementById("demo").innerHTML =result;
                           
         </script>
           
