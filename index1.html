@@ -7,20 +7,29 @@
     <title>js_program</title>
    
 </head>
-<body>
-       <input type="text" id ="text">
-       <input type="text" id="text1"><br><br><br>
-       <button type="button" onclick="swap()">swap</button>
-       <ul id="demo"></ul>
+<body>      
+           <input type="text" id="text" onkeyup="ok(this.value)">
+           <input type="button" onclick="fun()" value="submit">
+           <p id="demo" style="color: green;"></p>
+           <p id="demo1" style="color: red;"></p>
+
+      
         <script>
-             function swap(){
-                var x=document.getElementById("text").value;
-                document.getElementById("text").value=document.getElementById("text1").value; document.getElementById("text1").value
-                 =document.getElementById("demo").innerHTML=x;
-              
-               
-                
-             }
+             function ok(val){
+                      if(val.length>0)
+                      document.getElementById("text").style.borderColor="green";
+                      document.getElementById("demo").innerHTML ="value submitted";
+                               }
+                              
+                      
+                      function fun(){
+                        text=document.getElementById("text").value
+                        if(text.length==0)
+                        document.getElementById("text").style.borderColor="red";
+                        document.getElementById("demo1").innerHTML="please write something";
+                        
+                      }
+             
          
           
         </script>
