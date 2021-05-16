@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dispaly</title>
+    <title>js_program</title>
    
-         </head>
-          <body>         <p id="demo"></p>      
-                  <script> 
-                 
-                var x= 56;
-                var y=  x**2;
-           
-                    
-                       document.getElementById("demo").innerHTML ="square of  56 is:"+ y;
-                  </script>
+</head>
+<body>
+       <input type="text" id ="text">
+       <input type="text" id="text1"><br><br><br>
+       <button type="button" onclick="swap()">swap</button>
+        <script>
+             function swap(){
+           var x=document.getElementById("text").value;document.getElementById("text").value =document.getElementById("text1").value;
+           document.getElementById("text1").value =x;
+             }
+         
+          
+        </script>
+          
                             
                   
 </body>
