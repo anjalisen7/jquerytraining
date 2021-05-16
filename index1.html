@@ -11,10 +11,15 @@
        <input type="text" id ="text">
        <input type="text" id="text1"><br><br><br>
        <button type="button" onclick="swap()">swap</button>
+       <ul id="demo"></ul>
         <script>
              function swap(){
-           var x=document.getElementById("text").value;document.getElementById("text").value =document.getElementById("text1").value;
-           document.getElementById("text1").value =x;
+                var x=document.getElementById("text").value;
+                document.getElementById("text").value=document.getElementById("text1").value; document.getElementById("text1").value
+                 =document.getElementById("demo").innerHTML=x;
+              
+               
+                
              }
          
           
