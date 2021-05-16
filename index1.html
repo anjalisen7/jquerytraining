@@ -8,27 +8,22 @@
    
 </head>
 <body>      
-           <input type="text" id="text" onkeyup="ok(this.value)">
-           <input type="button" onclick="fun()" value="submit">
+          enter year <input type="text" id="text">
+           <input type="button" onclick="leap()" value="submit">
            <p id="demo" style="color: green;"></p>
            <p id="demo1" style="color: red;"></p>
 
       
         <script>
-             function ok(val){
-                      if(val.length>0)
-                      document.getElementById("text").style.borderColor="green";
-                      document.getElementById("demo").innerHTML ="value submitted";
-                               }
-                              
+             function leap(){
+                      var year=document.getElementById("text").value;
                       
-                      function fun(){
-                        text=document.getElementById("text").value
-                        if(text.length==0)
-                        document.getElementById("text").style.borderColor="red";
-                        document.getElementById("demo1").innerHTML="please write something";
-                        
+                      if (year%100==0 || year %400 ==0 || year%4==0){
+                        document.getElementById("demo").innerHTML ="this year is leap";
+                      } else{
+                        document.getElementById("demo1").innerHTML ="not a leap year";
                       }
+                     }
              
          
           
