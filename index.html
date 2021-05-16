@@ -6,36 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>highestvalue()</title>
-</head>
-<body>
-       <!------<input type ="text" id="txt">-->
-    <button type="button" id="btn" onclick="slice()">try it</button>
-  <p id="demo"></p>
-<!----- <p id="demo1">:</p>---->
-   <script>
-       
-    var cars=[
-        
-           {type:"volvo",year: 2001},
-           {type:"alto",year: 2016},
-           {type:"omni",year: 2021},
-           {type:"nano",year: 2009}
-        ];
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     
-        function slice()
-           {    
-            cars.sort(function(a, b){return a.year - b.year});
-                         slice();
-           }
-               function slice(){
-                  document.getElementById("demo").innerHTML=
-                                cars[0].type + " " + cars[0].year + "<br>" +
-                                 cars[1].type + " " + cars[1].year + "<br>" +
-                                  cars[2].type + " " + cars[2].year + "<br>"+
-                                  cars[3].type + " " + cars[3].year;
-           }
-          
-            
- </script>
+</head>
+<body>  
+
+
+      <div class="container">
+          <h1> TO DO LIST</h1>
+     <input type ="text" id="txt">
+     <button type="button" id="btn" onclick="italic()"> ADD</button>
+     <p id="demo"></p>
+       <ul id ="list">
+           <li>buy food for dog</li>
+       </ul>
+      
+
+
+      <button type="button" class="btn1 btn-lg btn-info">Removed</button>
+     
+   
+    </div>
+     
+  
 </body>
 </html> 
