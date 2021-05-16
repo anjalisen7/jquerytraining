@@ -8,7 +8,8 @@
    
 </head>
 <body>      
-            
+            <input type="text" id="text">
+            <button type="button" onclick="add()">ok</button>
            <p id="demo" style="color: green;"></p>
          
 
@@ -16,11 +17,11 @@
       <script>
 
             
-            function my_fun(name){
-                               document.getElementById("demo").innerHTML ="hello:=>" + name +"😄" + "<br>"+ "welcome in our page";
+            function add (a,b){
+                               document.getElementById("demo").innerHTML = (a+b) ;
                                      }
-                          let name= prompt ("enter a name:");
-                                   my_fun(name);
+                                     add(3,6);
+                          
         </script>
           
                             
