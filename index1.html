@@ -8,18 +8,16 @@
    
 </head>
 <body>      
-             <input type="text" id="text">
-             <input type="text" id="text2">
            <p id="demo" style="color: green; font-size: 40px;"></p>
            <p id="demo1" style="color:red; font-size: 40px;"></p>
-            <button type="button" onclick="data()">ok</button>
+           
                         
 
       
            <script>     
-                   data =() => "aashima is learning"
+                   data =(y,z) => "value is" + y*z;
                     
-                       document.getElementById("demo").innerHTML =data();
+                       document.getElementById("demo").innerHTML =data(65,23);
                    
                          
                    
