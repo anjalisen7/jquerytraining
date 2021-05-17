@@ -9,19 +9,26 @@
 </head>
 <body>      
              <input type="text" id="text">
+             <input type="text" id="text2">
            <p id="demo" style="color: green; font-size: 40px;"></p>
            <p id="demo1" style="color:red; font-size: 40px;"></p>
-            <button type="button" onclick="myfunction()">ok</button>
+            <button type="button" onclick="data()">ok</button>
                         
 
       
            <script>     
-                    function myfunction(){
-                              var x= (document.getElementById("text").value);
-                                var y = "anjali"
-                                 var z = + y;
-                                     document.getElementById("demo").innerHTML = typeof z + "<br>" + typeof y;
-                                           }     
+                   data =() => {
+                    
+                      var y = document.getElementById("text").value;
+                      var z = document.getElementById("text2").value;
+                      
+                       document.getElementById("demo").innerHTML =  y * z;
+                         
+                   }
+                              
+                    
+                    
+                    
            </script>
           
                             
