@@ -16,9 +16,16 @@
       
            <script>     
                     function myfunction(){
+                                     text ="";
                          var x=["anjali","kashish","kerchan","kumar","folow",45, null];
-                        document.getElementById("demo").innerHTML=typeof "anjali" + "<br>"+typeof 45 +"<br>" + typeof null;
-                    }      
+                            var i =x.length;
+                            for(i=5; i<10;i++){
+                               text += i;
+                            }
+                       
+                    document.getElementById("demo").innerHTML =  "array value is:" +x +"<br>" +
+                   "text type is:" +typeof text +"<br>" + text;
+                    }     
            </script>
           
                             
