@@ -8,24 +8,19 @@
    
 </head>
 <body>      
-           
+             <input type="text" id="text">
            <p id="demo" style="color: green; font-size: 40px;"></p>
+           <p id="demo1" style="color:red; font-size: 40px;"></p>
             <button type="button" onclick="myfunction()">ok</button>
                         
 
       
            <script>     
                     function myfunction(){
-                                     text ="";
-                         var x=["anjali","kashish","kerchan","kumar","folow",45, null];
-                            var i =x.length;
-                            for(i=5; i<10;i++){
-                               text += i;
-                            }
-                       
-                    document.getElementById("demo").innerHTML =  "array value is:" +x +"<br>" +
-                   "text type is:" +typeof text +"<br>" + text;
-                    }     
+                              var x= Number(document.getElementById("text").value);
+                              var y = +x;
+                                     document.getElementById("demo").innerHTML = typeof x;
+                                           }     
            </script>
           
                             
