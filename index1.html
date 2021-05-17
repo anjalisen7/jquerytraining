@@ -10,22 +10,17 @@
 <body>      
               <h1>click for result:</h1>
            <p id="demo" style="color: green; font-size: 40px;"></p>
-            <button type="button" onclick="obj()">ok</button>
+           <input type="text" id="text" value="18">
+            <button type="button" onclick="age()">ok</button>
                         
 
       
       <script>     
-                 function obj(){
-                     var x ={ name:"anjali", id:23, 
-                     tel:232323, col:"whitish" ,shape:"oval", surName:"_rj",
-                      person: function(){
-                            return this.name+ "" + this.surName;
-                      }
-                            };
-                            document.getElementById("demo").innerHTML = x.person();
-                          }
-
-               
+                  function age(){
+                var x= document.getElementById("text").value;
+                var age = (x<=18) ? "Too young":"old enough" ;
+                 document.getElementById("demo").innerHTML = age + " "+"to vote:";
+                  }  
         </script>
           
                             
