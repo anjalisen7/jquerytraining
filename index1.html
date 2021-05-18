@@ -15,11 +15,13 @@
 
       
            <script>     
-                   data =(y,z) => "value is" + y*z;
-                    
-                       document.getElementById("demo").innerHTML =data(65,23);
-                   
-                         
+                    class menu{
+                         constructor(val){
+                             this.classes = val;
+                         }
+                    }
+                         myvalue = new menu("data structured");
+                         document.getElementById("demo").innerHTML = myvalue.classes
                    
                               
                     
