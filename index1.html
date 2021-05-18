@@ -16,17 +16,17 @@
       
            <script>     
                     class menu{
-                         constructor(name,id,year){
-                             this.n= name;
-                             this.i_d= id;
-                             this.y=year;
+                         constructor(num){
+                            
+                             this.n=num;
                          }
                          add(){
-                            
+                           this.n*=2;  
                          }
                     }
-                        const data = new menu("sonali" , 24 ,2021);
-                        document.getElementById("demo").innerHTML = data.i_d;
+                         data = new menu(8);
+                        data.add();
+                        document.getElementById("demo").innerHTML = data.n;
                    
                               
                     
