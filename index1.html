@@ -16,12 +16,17 @@
       
            <script>     
                     class menu{
-                         constructor(val){
-                             this.classes = val;
+                         constructor(name,id,year){
+                             this.n= name;
+                             this.i_d= id;
+                             this.y=year;
+                         }
+                         add(){
+                            
                          }
                     }
-                         myvalue = new menu("data structured");
-                         document.getElementById("demo").innerHTML = myvalue.classes
+                        const data = new menu("sonali" , 24 ,2021);
+                        document.getElementById("demo").innerHTML = data.i_d;
                    
                               
                     
