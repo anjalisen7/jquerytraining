@@ -7,31 +7,26 @@
     <title>js_program</title>
    
 </head>
-<body>      
+<body>      <h1> click ok for your id</h1>
            <p id="demo" style="color: green; font-size: 40px;"></p>
            <p id="demo1" style="color:red; font-size: 40px;"></p>
+           <button type ="button" onclick="student1.fun()">ok</button>
            
                         
-
-      
-           <script>     
-                    class menu{
-                         constructor(num){
-                            
-                             this.n=num;
-                         }
-                         add(){
-                           this.n*=2;  
-                         }
-                    }
-                         data = new menu(8);
-                        data.add();
-                        document.getElementById("demo").innerHTML = data.n;
-                   
-                              
-                    
-                    
-                    
+           <script>
+          class student {
+              constructor(name,id){
+              this.n= name;
+              this.i =id;
+              }
+               fun (){
+                document.getElementById("demo1").innerHTML = ("name is:"+student1.n + "<br>"+"your id is:"+ student1.i);               
+               }
+          }
+            let student1 =new student("anjali" ,23);
+             prompt("HELLO"+student1.n +" / "+"write something to get your id");
+                        
+             // student1.fun();
            </script>
           
                             
