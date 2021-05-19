@@ -7,23 +7,27 @@
     <title>js_program</title>
    
 </head>
-<body>      <h1> employee</h1>
+<body>    
            <ul id="demo" style="color: green; font-size: 40px;"></ul>
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
            <script>
-              var emp = class {
-                          constructor(name, id,)
+              class area {
+                          constructor(height, width,)
                           {
-                               this.n =name;
-                               this.id= id;
+                               this.h =height;
+                               this.w= width;
                              
                            }
-                                }
+                             // get(){
+                               //   return this.h* this.w;
+                              }
+                                
                         
-                    var emp2 = new emp("anajli", 23) ;
-                    document.getElementById("demo1").innerHTML = emp2.id + emp2.name;  
+                    var area1= new area(45, 23) ;
+                    document.getElementById("demo1").innerHTML = "area:"+ area1.h * area1.w;  
+                    //get ();
            </script>
           
                             
