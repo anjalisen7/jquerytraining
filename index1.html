@@ -7,42 +7,23 @@
     <title>js_program</title>
    
 </head>
-<body>      <h1> patient details</h1>
+<body>      <h1> employee</h1>
            <ul id="demo" style="color: green; font-size: 40px;"></ul>
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
            <script>
-               class hospital {
-                          constructor(patient, disease, doctorname, level){
-                               this.pt_name =patient;
-                               this.ds = disease;
-                               this.doc =doctorname;
-                               this.le =level;
-                            
+              var emp = class {
+                          constructor(name, id,)
+                          {
+                               this.n =name;
+                               this.id= id;
+                             
+                           }
                                 }
-                         get ()   {
-                                 return   `${this.pt_name}says hello` ;
-                                  }
-                                 
-                               }
-                               var hos1= new hospital("anjali","infection","dr. shoaib",1);
-                                document.getElementById("demo").innerHTML ="patient name is:"+hos1.pt_name +
-                                "<br>"+"disease:"+hos1.ds +
-                                 "<br>"+ "doctor name:"+hos1.doc;
-                                 hos1.get();
-                                   
-                                  
-                         class hospital2 extends hospital{
-                             constructor(patient, disease,doctorname){
-                             
-                             
-                             super(patient, disease)  
-                              this.doc =doctorname;
-                             }
-                         }
-                           var hos2 =new hospital2("raakib","ibs","dr.minaaz");
-                           document.getElementById("demo1").innerHTML ="new patient name is:"+hos2.pt_name+"<br>" + "refer to doctor:"+hos2.doc;
+                        
+                    var emp2 = new emp("anajli", 23) ;
+                    document.getElementById("demo1").innerHTML = emp2.id + emp2.name;  
            </script>
           
                             
