@@ -7,26 +7,42 @@
     <title>js_program</title>
    
 </head>
-<body>      <h1> click ok for your id</h1>
-           <p id="demo" style="color: green; font-size: 40px;"></p>
-           <p id="demo1" style="color:red; font-size: 40px;"></p>
-           <button type ="button" onclick="student1.fun()">ok</button>
+<body>      <h1> patient details</h1>
+           <ul id="demo" style="color: green; font-size: 40px;"></ul>
+           <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
            <script>
-          class student {
-              constructor(name,id){
-              this.n= name;
-              this.i =id;
-              }
-               fun (){
-                document.getElementById("demo1").innerHTML = ("name is:"+student1.n + "<br>"+"your id is:"+ student1.i);               
-               }
-          }
-            let student1 =new student("anjali" ,23);
-             prompt("HELLO"+student1.n +" / "+"write something to get your id");
-                        
-             // student1.fun();
+               class hospital {
+                          constructor(patient, disease, doctorname, level){
+                               this.pt_name =patient;
+                               this.ds = disease;
+                               this.doc =doctorname;
+                               this.le =level;
+                            
+                                }
+                         get ()   {
+                                 return   `${this.pt_name}says hello` ;
+                                  }
+                                 
+                               }
+                               var hos1= new hospital("anjali","infection","dr. shoaib",1);
+                                document.getElementById("demo").innerHTML ="patient name is:"+hos1.pt_name +
+                                "<br>"+"disease:"+hos1.ds +
+                                 "<br>"+ "doctor name:"+hos1.doc;
+                                 hos1.get();
+                                   
+                                  
+                         class hospital2 extends hospital{
+                             constructor(patient, disease,doctorname){
+                             
+                             
+                             super(patient, disease)  
+                              this.doc =doctorname;
+                             }
+                         }
+                           var hos2 =new hospital2("raakib","ibs","dr.minaaz");
+                           document.getElementById("demo1").innerHTML ="new patient name is:"+hos2.pt_name+"<br>" + "refer to doctor:"+hos2.doc;
            </script>
           
                             
