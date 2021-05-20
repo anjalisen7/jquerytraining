@@ -12,47 +12,12 @@
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
-<script>
-    class employee{
-                  constructor (name, age, salary){
-                   this.n=name;
-                   this.a=age;
-                   this.sal =salary;
-                                                 }
-                hello () {
-                  document.write(`<h2>employees details </h2> Name: ${this.n} <br> Age: ${this.a} <br> salary:${this.sal}`)
-                           }
-                          }  
-                             
-                          class manager extends employee {
-                                     hello () {
-                                           let ta =2000;
-                                           let da= 1300;
-                                          let totalsal = this.sal + ta +  da;
-                                       
-                              document.write(`<h2>manager details  </h2> Name: ${this.n} <br> Age: ${this.a} <br> salary:${totalsal}`)
-                                     }
-                                    }
-                             let manag =  new manager ("Rahiel_rj", 28, 39456);
-                             manag.hello();
-                             let emp1 = new employee ("shoaib saifi", 31,30056);
-                     let emp2 = new employee ("hayat", 29,25000);
-                     let emp3 = new employee ("ruqu", 27,24890);
-                     let emp4 = new employee ("qurat", 27,27981);
-                      
-                      emp1.hello();
-                      emp2.hello();
-                      emp3.hello();
-                      emp4.hello();
-                      
-                    
-                 
-                       
-                 
-                       
+          <script>
+              var text =`{"name":"anjali", "age":30, "city":"indore"}`;
 
-                  
-            
+                 obj =JSON.parse(text);
+                 document.getElementById("demo").innerHTML = obj.name+" " + obj.age;
+
            </script>
           
                             
