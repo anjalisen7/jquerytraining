@@ -6,22 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js_program</title>
    
-</head>
-<body>    
+</head>     
+
+            <input type ="text" id="text">
+            <input type ="text"  id ="text1">
            <ul id="demo" style="color: green; font-size: 40px;"></ul>
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
+           <button type ="button" onclick ="get()">ok</button>
            
                         
       <script>
-                    var x, y, z;
+                    var x, y, z,a;
+                     function get(){
 
-
-             x = { car: "swift", color: "black", city: "New York" };
-             y = JSON.stringify(x);
-             localStorage.setItem("testJSON",y);
-              text = localStorage.getItem("testJSON");
-                 obj = JSON.parse(text);
-                 document.getElementById("demo").innerHTML =  "car model:"+ " "+obj.car;
+                x = document.getElementById("text").value;document.getElementById("text").value=
+                 document.getElementById("text1").value; document.getElementById("text1").value=x
+              
+                  y = JSON.stringify(x);
+                 sessionStorage.setItem("testJSON",y);
+                  a = sessionStorage.getItem("testJSON");
+                 obj = JSON.parse(a);
+                 document.getElementById("demo").innerHTML =  obj;
+                     }
       
       </script>
           
