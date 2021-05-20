@@ -4,61 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery</title>
-    <script src="jquery.js"></script>
+    <title>Document</title>
+    <script src ="jquery.js"></script>
 </head>
 <body>
-         
-            <h1>WELCOME</h1>
-           
-            <div id ="con" style="border: 2px solid black;">
-            <p id ="demo"> hello welcome in my jquery world...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore sequi quis temporibus, nostrum facilis corporis!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus nobis quam fugiat iste quo harum maxime laudantium perspiciatis laborum id eos libero deserunt, recusandae at expedita veritatis cupiditate labore. Consequatur magnam eaque facilis, eius adipisci officia praesentium? Eum fugit vitae fugiat, aliquam neque eius fuga facilis molestias aperiam impedit!        
-           </p>
-           
-            </div>
-            <br><br>
-        <center><form id="form">
-                <label>   NAME</label>
-               <input type ="text" id="text"><br><br>
-               <label> LASTNAME</label>
-             <input type ="text" id ="text2"><br><br>
-             <label>PASSWORD</label>
-            <input type ="password" id="pass" placeholder="@234"><br><br>
-            <label for="">country</label>
-               <select id="scountry">
-                <option value="india">INDIA</option>
-                <option value="pakistan">pakistan</option>
-                <option value="germany">germany</option>
-                <option value="iran">iran</option>
-                <option value="china">china</option>
-            </select><br><br>
-     
-               <button id ="btn">submit</button>
-            </form>   </center>
-            <p id="juna" style="text-align: center;"></p>
+     <h1>welcome</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odio consectetur omnis, libero fugiat praesentium vero architecto corrupti, nostrum accusantium accusamus dolore. Delectus maiores explicabo esse voluptatibus mollitia nulla architecto!</p>
+     <ul id="kim">
+         <li>apple</li>
+         <li>guava</li>
+         <li>lemon</li>
+         <li>litchi</li>
+         <li>chilly</li>
+     </ul>
      <script>
-             $(document).ready(function(){
-                 
-                     $('#text, #text2, #pass').focus(function(){
-                           $(this).css("background-color","grey")
-                     });
-                     $('#text, #text2, #pass').blur(function(){
-                           $(this).css("background-color","")
-                     });
-                     $('#scountry').change(function(){
-                          // $(this).css("background-color","pink")  
-                          var x = $(this).val();
-                          $('#juna').html(x);
-                          $('#juna').css("border", "2px black solid")
-                          $('#juna').css("font-size", '40px')
-                 })
-                 $('#form').submit(function(){
-                    alert("form submitted! 👍");
+         $ (document).ready(function(){
+             $ ('#kim').bind("click",function()
+             {
+                 alert("get lost...");
              });
-                    
-            });
-       </script>
+         })
+     </script>   
+
 </body>
+    
+
+
 </html>
