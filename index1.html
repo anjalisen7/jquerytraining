@@ -16,19 +16,16 @@
            
                         
       <script>
-                    var x, y, z,a;
+                    
                      function get(){
 
-                x = document.getElementById("text").value;document.getElementById("text").value=
-                 document.getElementById("text1").value; document.getElementById("text1").value=x
-              
-                  y = JSON.stringify(x);
-                 sessionStorage.setItem("testJSON",y);
-                  a = sessionStorage.getItem("testJSON");
-                 obj = JSON.parse(a);
-                 document.getElementById("demo").innerHTML =  obj;
+               var x = document.getElementById("text").value;
+               var y =document.getElementById("text1").value;
+                   var obj = JSON.parse(x);
+                    var obj1 =JSON.parse(y);
+                    // obj.birth = new Date (obj.birth);
+                     document.getElementById("demo").innerHTML= (obj * obj1);
                      }
-      
       </script>
           
                             
