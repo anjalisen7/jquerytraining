@@ -5,8 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="jquery.js"></script>
 </head>
 <body>
-    
+         
+            <h1>WELCOME</h1>
+            <p id ="demo"> hello welcome in my jquery world...</p>
+            <button type ="button" id="btn">ok</button>
+       
+ <script>
+             $(document).ready(function(){
+                 $('#btn').click(function(){
+                     $('#demo').hide();
+                 })
+                    })
+
+       </script>
 </body>
 </html>
