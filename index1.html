@@ -12,22 +12,32 @@
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
-           <script>
-              class area {
-                          constructor(height, width,)
-                          {
-                               this.h =height;
-                               this.w= width;
-                             
+<script>
+    class employee{
+                  constructor (name, age, salary){
+                   this.n=name;
+                   this.a=age;
+                   this.sal =salary;
+                                                 }
+                hello () {
+                  document.write(`<h2>employees class </h2> Name: ${this.n} <br> Age: ${this.a} <br> salary:${this.sal}`)
                            }
-                             // get(){
-                               //   return this.h* this.w;
-                              }
-                                
-                        
-                    var area1= new area(45, 23) ;
-                    document.getElementById("demo1").innerHTML = "area:"+ area1.h * area1.w;  
-                    //get ();
+                          }                 
+                     let emp1 = new employee ("shoaib saifi", 31,30056);
+                     let emp2 = new employee ("hayat", 29,25000);
+                     let emp3 = new employee ("ruqu", 27,24890);
+                     let emp4 = new employee ("qurat", 27,27981);
+                      emp1.hello();
+                      emp2.hello();
+                      emp3.hello();
+                      emp4.hello();
+                 
+                       
+                 
+                       
+
+                  
+            
            </script>
           
                             
