@@ -12,13 +12,18 @@
            <ul id="demo1" style="color:red; font-size: 40px;"></ul>
            
                         
-          <script>
-              var text =`{"name":"anjali", "age":30, "city":"indore"}`;
+      <script>
+                    var x, y, z;
 
-                 obj =JSON.parse(text);
-                 document.getElementById("demo").innerHTML = obj.name+" " + obj.age;
 
-           </script>
+             x = { car: "swift", color: "black", city: "New York" };
+             y = JSON.stringify(x);
+             localStorage.setItem("testJSON",y);
+              text = localStorage.getItem("testJSON");
+                 obj = JSON.parse(text);
+                 document.getElementById("demo").innerHTML =  "car model:"+ " "+obj.car;
+      
+      </script>
           
                             
                   
