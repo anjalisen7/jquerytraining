@@ -5,27 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js_program</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    
-</head>     
-
-            <input type ="text" id="text">
-            <input type ="text"  id ="text1">
-           <ul id="demo" style="color: green; font-size: 40px;"></ul>
-           <ul id="demo1" style="color:red; font-size: 40px;"></ul>
-           <button type ="button" onclick ="get()">ok</button>
-           
+</head>
+<body>     
+             <p class ="demo">HELLO</p>
+             <p class="demo">"welcome in my jquery world".</p>
+             <button type="button" id="btn">ok</button>
                         
       <script>
-                    
-                     function get(){
+                    $ (document).ready(function(){
+                      $ ('#btn').click(function(){;
+                      $ ('.demo').hide();
+                       })
+                    })
+             
 
-               var x = document.getElementById("text").value;
-               var y =document.getElementById("text1").value;
-                   var obj = JSON.parse(x);
-                    var obj1 =JSON.parse(y);
-                    // obj.birth = new Date (obj.birth);
-                     document.getElementById("demo").innerHTML= (obj * obj1);
-                     }
+                                       
       </script>
           
                             
