@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jquery</title>
     <script src="jquery.js"></script>
 </head>
 <body>
          
             <h1>WELCOME</h1>
-            <p id ="demo"> hello welcome in my jquery world...</p>
-            <button type ="button" id="btn">ok</button>
+            <div id ="con" style="border: 2px solid black;">
+            <p id ="demo"> hello welcome in my jquery world...
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore sequi quis temporibus, nostrum facilis corporis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum accusamus nobis quam fugiat iste quo harum maxime laudantium perspiciatis laborum id eos libero deserunt, recusandae at expedita veritatis cupiditate labore. Consequatur magnam eaque facilis, eius adipisci officia praesentium? Eum fugit vitae fugiat, aliquam neque eius fuga facilis molestias aperiam impedit!        
+           </p>
+            </div>
+
+
+
        
  <script>
              $(document).ready(function(){
-                 $('#btn').click(function(){
-                     $('#demo').hide();
+                 
+                     $('#con').mouseenter(function(){
+                           $('#demo').css("color","tan")
+                     });
+                     $('#con').mouseleave(function(){
+                        $('#demo').css("font-size","20px")
+                     })
+                     
                  })
-                    })
+                    
 
        </script>
 </body>
