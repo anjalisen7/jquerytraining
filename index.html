@@ -10,96 +10,40 @@
     <script src ="jquery.js"></script>
     
 </head>
-<body>
-        <div id="div" style="display: none;">
-    <center><h3>Registration Form</h3></center>
-    <table bgcolor="gray" align="center">
-      <form action="#" method="GET">
-          <tr>
-              <td>
-                  <label>Enter Username</label> 
-              </td>
-              <td> 
-                  <input type="text" name="uname" placeholder="Enter Username">
-              </td>
-          </tr>
-          <tr>
-           <td>
-               <label>Enter Password</label> 
-           </td>
-           <td> 
-               <input type="password" name="upass" placeholder="Enter Password">
-           </td>
-       </tr>
-       <tr>
-           <td>Select Gender</td>
-           <td>
-               <input type="radio" name="gender" value="Male">Male
-               <input type="radio" name="gender" value="Female">Female
-           </td>
-       </tr>
-       <tr>
-           <td>Select City:</td>
-           <td>
-               <select name="ddcity">
-                   <option value="">Select City</option>
-                   <option value="bhopal">Bhopal</option>
-                   <option value="pune">Pune</option>
-                   <option value="mumbai">Mumbai</option>
-                   <option value="indore">Indore</option>
-               </select>
-           </td>
-       </tr>
-       <tr>
-           <td>File Upload</td>
-           <td><input type="file" name="myfile" accept="image/*"></td>
-       </tr>
-       <tr>
-           <td>Enter Message:</td>
-           <td><textarea cols="20" rows="5" name="msg"></textarea></td>
-       </tr>
-       <tr>
-           <td>
-               Select Language You Know:
-           </td>
-           <td>
-               <input type="checkbox" value="hi" name="lang1">Hindi
-               <input type="checkbox" value="eng" name="lang2">English
-               <input type="checkbox" value="oth" name="lang3">Other
-           </td>
-       </tr>
-       <tr>
-           <td></td>
-           <td>
-               <input type="submit" value="Login">
-               <input type="reset" value="Clear">
-           </td>
-       </tr>
-      </form>
-   </table>
-</div> 
+<body>  
+       <div id ="div" style="border:2px solid black; background-color: honeydew;">
+           <h1>HOW TO ADD VALUES</h1>
+           <p id="dem">Addition
+            The addition is taking two or more numbers and adding them together, that is, it is the total sum of 2 or more numbers.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur impedit at quo. Assumenda ut dicta non. Mollitia aliquid quibusdam facere suscipit quisquam blanditiis praesentium! Eum at quis quaerat, nemo amet maiores dolore minus. Cupiditate iste tempore voluptates laboriosam non et repellat incidunt quidem distinctio, voluptate nobis, asperiores magni error optio nostrum! Consequuntur est itaque incidunt tenetur temporibus, nobis iste.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta error illo iure voluptate vel voluptates fugit animi alias maxime dicta! Reprehenderit facilis, iure asperiores natus cumque repellendus laudantium odio quae. Illo placeat perspiciatis, totam saepe eligendi nobis eius, non odit, nemo doloremque nisi possimus veniam quis odio omnis tenetur animi adipisci maxime quibusdam eum quas repudiandae tempore rerum. Quo, beatae.
+            Example: <p id="demo"></p>
             
-                
-            <button class ="btn2">RAGISTRATION</button>
+            </p>
+          </div><br>
+         
+       <div>
+               <form  id="form">
+               <label>first value</label>
+                <input type="text" id="text"><br>
+                <label> second value </label>
+              <input type ="text" id="text2"><br>
+              </form>
+           <button type="button" ,id="btn">submit</button>
+     </div>
+        
+        <script>
+            $ (document).ready(function(){
+                 $ ('#dem').click(function(){
+                     $('#dem').slideToggle();
+                 })
+                });
+               
 
-         <style>
-            .btn2{
-                font-size: 20px;
-                margin: 10% 40%;
-            }
-
-         </style>
-           <script>
-               $ (document).ready(function(){
-                 $ ('.btn2').click(function(){
-                        $ ('#div').toggle("3000");
-                    })
-               });
-                      
+               
+              
                  
-           </script>
-
-
+        </script>
 </body>
 
 </html>
