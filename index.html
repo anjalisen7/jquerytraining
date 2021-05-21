@@ -8,20 +8,20 @@
     <script src ="jquery.js"></script>
 </head>
 <body>
-      <p1 id ="fan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas tempore magnam recusandae id. Animi officia enim consequatur totam laboriosam sit ex, ut quia omnis sint rerum iusto? Dicta quia omnis fuga obcaecati minima!</p1>
+          <img id ="img" src ="moda.gif">
+          <button id="btn">ok</button>
+           <script>
+               $ (document).ready(function(){
+               $('#btn').click(function(){
+                   $('#img').toggle(function(){
+                       alert("task completed");
+                   })
+               })
+                      
+                   });
+           </script>
 
-</body>
-    <script>
-        $(document).ready(function(){
-            $('#fan').hover(function(){
-                alert("hello welcome in this");
-            },
-            function (){
-                   alert("bye now you can leave this");
-            })
-        })
-        
-    </script>
+
 </body>
 
 </html>
