@@ -11,32 +11,34 @@
     
 </head>
 <body>  
-       <div id ="div" style="border:2px solid black; background-color: honeydew;">
+       <div id ="div2" style="border:2px solid black; background-color: honeydew;">
            <h1>HOW TO ADD VALUES</h1>
            <p id="dem">Addition
             The addition is taking two or more numbers and adding them together, that is, it is the total sum of 2 or more numbers.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur impedit at quo. Assumenda ut dicta non. Mollitia aliquid quibusdam facere suscipit quisquam blanditiis praesentium! Eum at quis quaerat, nemo amet maiores dolore minus. Cupiditate iste tempore voluptates laboriosam non et repellat incidunt quidem distinctio, voluptate nobis, asperiores magni error optio nostrum! Consequuntur est itaque incidunt tenetur temporibus, nobis iste.
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta error illo iure voluptate vel voluptates fugit animi alias maxime dicta! Reprehenderit facilis, iure asperiores natus cumque repellendus laudantium odio quae. Illo placeat perspiciatis, totam saepe eligendi nobis eius, non odit, nemo doloremque nisi possimus veniam quis odio omnis tenetur animi adipisci maxime quibusdam eum quas repudiandae tempore rerum. Quo, beatae.
-            Example: <p id="demo"></p>
-            
+            Example:
             </p>
-          </div><br>
-         
-       <div>
-               <form  id="form">
-               <label>first value</label>
-                <input type="text" id="text"><br>
-                <label> second value </label>
-              <input type ="text" id="text2"><br>
-              </form>
-           <button type="button" ,id="btn">submit</button>
-     </div>
-        
+          </div><br><br>
+          <div style="text-align: center;">
+            <div id="div" style="border:3px solid pink; height:20px; width:40px;position: absolute;"></div>
+           <p id="s"> <span>0</span></p>
+         <button type="button" id="btn">+</button>
+         <button type="button" id="btn1">-</button>
+        </div>
+
+
         <script>
+             var a=0;
             $ (document).ready(function(){
-                 $ ('#dem').click(function(){
-                     $('#dem').slideToggle();
+                 $ ('#btn').click(function(){
+                    $ ('span').text (a+= 1, function(){
+                      
+                    });     
                  })
+                  $ ('#btn1').click(function(){
+                      $ ("span").text(a-=1);
+                  })
                 });
                
 
