@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+          <div class="container-fluid">
+        <table class ="table table-stripped table-dark table-hover">
+          <thead>
+            <tr>
+              <th>s.no.</th>
+              <th>user-id</th>
+              <th>title</th>
+              <th>status</th>
+            </tr>
+          </thead>
+          <tbody id="data">
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <center><button id="btn">ok</button></center>
+      <script>
+            $(document).ready(function(){
+             $('#btn').click(function(){
+               $.get('https://jsonplaceholder.typicode.com/todos', function(data){
+                      if (data.length>0){
+                         var text = " ";
+                           data.forEach((u) => {
+                             text += "<tr>";
+                             text += "<td>"+u.id +"</td>"
+                             text += "<td>"+u.userId +"</td>"
+                             text += "<td>"+u.title +"</td>"
+                             text += "<td>"+u.completed +"</td>"
+                               });
+                               document.getElementById("data").innerHTML = text;
+                              }
+                           })
+                        })
+                      });
+
+                      $('#btn').click(function(){
+                           $('table').toggle();
+                      })
+       </script>
+     
+     
+     <style>
+       *{
+         text-transform: uppercase;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+           #btn{
+              background-color: brown;
+              color:beige;
+               width: 100px;
+               height:50px;
+               font-weight: bolder;
+               font-family: cursive;
+               margin-top: 100px;
+               }
+      </style>
+</body>
+</html>
