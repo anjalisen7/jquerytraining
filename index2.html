@@ -4,28 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oportune</title>
+    <title>jquery</title>
     <script src="jquery.js"></script>
-    <script>"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</script>
-   
-             
 </head>
 <body>
- <button id="btn">ok</button>
- <script>
-        $(document).ready(function(){
-            $('#btn').click(function(){
-                $.post('https://jsonplaceholder.typicode.com/posts',
-                {
-                    id :"142",
-                    title :"bole bum bum"
-                },
-                function(data,status){
-                    alert("id:"+ data.id + "\n" + "title:"+ data.title + "\nStatus" +"\n"+ status);
-                })
-            })
-            })
-    
+  <input type="text" id="text">
+  <p id="demo"></p>
+  <button id="demo1">ok</button>
+      <script>
+         $(document).ready(function(){
+          $('#demo1').click(function(){
+             var x=($("#text").val());
+               $('#demo').html(x);
+          })
+         });
+      </script>
     
  </script>
 </body>
