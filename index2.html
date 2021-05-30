@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery</title>
     <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <input type="text" id="text">
-  <p id="demo"></p>
-  <button id="demo1">ok</button>
+      <p id="kim"></p>
+      <div>
+      <h1>using select all elements(*)</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
+        <form>
+            enter name<input type =text>
+            <input type ="password">
+            <input type ="color">
+        </form>
+       
+    </div>
+     
+    <button id="btn">ok</button>
+     
       <script>
-         $(document).ready(function(){
-          $('#demo1').click(function(){
-             var x=($("#text").val());
-               $('#demo').html(x);
-          })
-         });
-      </script>
-    
+ 
+       $(document).ready(function () {
+           $('#btn').click(function(){
+            $("*").hide();     
+           })	
+       });
  </script>
 </body>
 </html>
