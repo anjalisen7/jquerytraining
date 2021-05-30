@@ -9,12 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-      <p id="kim"></p>
+      
       <div>
       <h1>using select all elements</h1>
       <h1>here we are using selectors for practice</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
-      <p class="kim"> The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
+      <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
+      <p id="kim"> The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
       <form>
             enter name<input type =text>
             <input type ="password" id="text">
@@ -48,7 +48,8 @@
  
        $(document).ready(function () {
            $('#btn').click(function(){
-            $("a[target='_blank']").css("background-color","pink");  
+            $("p[id!='kim']").css("font-size","20px"); 
+            $("p[id!='kim']").css ("background-color","teal") 
            });
        });
  </script>
