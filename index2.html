@@ -34,8 +34,8 @@
             <li>ice-cream</li>
         </ul>
          <a href= "#">Facebook</a>
-         <a href= "#">Home</a>
-         <a href= "#">Watsup</a>
+         <a href= "#" target="_blank">Home</a>
+         <a href= "#" target="_self">Watsup</a>
          <a href= "#">facebook</a>
          
 
@@ -48,7 +48,7 @@
  
        $(document).ready(function () {
            $('#btn').click(function(){
-            $("[href]").css("font-size","45px");  
+            $("a[target='_blank']").css("background-color","pink");  
            });
        });
  </script>
