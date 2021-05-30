@@ -37,6 +37,27 @@
          <a href= "#" target="_blank">Home</a>
          <a href= "#" target="_self">Watsup</a>
          <a href= "#">facebook</a>
+         <hr><hr><hr style="background-color: darkred;">
+         <table  border="4" cellspacing="2" cellpadding="1" style="width:67px; height:67px">
+             <tr>
+                 <th>user-id</th>
+                 <th>status</th>
+                 <th>roll-no.</th>
+             </tr>
+             <tr>
+              <td>1</td>   
+              <td>single</td>   
+              <td>34</td>   
+             </tr> <tr>
+                <td>2</td>   
+                <td>single</td>   
+                <td>36</td>   
+               </tr> <tr>
+                <td>3</td>   
+                <td>married</td>   
+                <td>56</td>   
+               </tr>
+         </table>
          
 
        
@@ -48,7 +69,8 @@
  
        $(document).ready(function () {
            $('#btn').click(function(){
-                  $(":text").css("background-color","pink") 
+                  $("tr:even").css("background-color","pink") 
+                  $("tr:odd").css("background-color", "olive")
                });
            });
  </script>
