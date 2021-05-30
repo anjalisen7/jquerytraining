@@ -17,8 +17,8 @@
       <p class="kim"> The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
       <form>
             enter name<input type =text>
-            <input type ="password">
-            <input type ="color">
+            <input type ="password" id="text">
+            <input type ="color" id="text2">
         </form>
         <ul>
             <li>coffee</li>
@@ -42,7 +42,8 @@
  
        $(document).ready(function () {
            $('#btn').click(function(){
-            $("h1:first").toggle();     
+            $('div').fadeToggle();
+            $('div').fadein("slow");    
            });
        });
  </script>
