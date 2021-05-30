@@ -9,70 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-      
-      <div>
-      <h1>using select all elements</h1>
-      <h1>here we are using selectors for practice</h1>
-      <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
-      <p id="kim"> The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
-      <form>
-            enter name<input type =text>
-            <input type ="password" id="text">
-            <input type ="color" id="text2">
-        </form>
-        <ul>
-            <li>coffee</li>
-            <li>tea</li>
-            <li>juices</li>
-            <li>coldrinks</li>
-        </ul>
-        <ul>
-            <li>burger</li>
-            <li>hot-dog</li>
-            <li>golgappe</li>
-            <li>pizzaa</li>
-            <li>ice-cream</li>
-        </ul>
-         <a href= "#">Facebook</a>
-         <a href= "#" target="_blank">Home</a>
-         <a href= "#" target="_self">Watsup</a>
-         <a href= "#">facebook</a>
-         <hr><hr><hr style="background-color: darkred;">
-         <table  border="4" cellspacing="2" cellpadding="1" style="width:67px; height:67px">
-             <tr>
-                 <th>user-id</th>
-                 <th>status</th>
-                 <th>roll-no.</th>
-             </tr>
-             <tr>
-              <td>1</td>   
-              <td>single</td>   
-              <td>34</td>   
-             </tr> <tr>
-                <td>2</td>   
-                <td>single</td>   
-                <td>36</td>   
-               </tr> <tr>
-                <td>3</td>   
-                <td>married</td>   
-                <td>56</td>   
-               </tr>
-         </table>
-         
 
-       
-    </div>
-     
-    <button id="btn">ok</button>
-     
+      <input type="text" id="text">
+      <p id ="demo"></p>
+     <button onclick="append()">ok</button>
       <script>
- 
-       $(document).ready(function () {
-           $('#btn').click(function(){
-                  $("tr:even").css("background-color","pink") 
-                  $("tr:odd").css("background-color", "olive")
-               });
-           });
+           function append(){
+           var y=document.getElementById("text").value;
+          var x =document.createElement("li");
+          x.innerHTML= y;
+          $("body").append(x);
+           }
  </script>
 </body>
 </html>
