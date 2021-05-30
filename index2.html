@@ -12,12 +12,19 @@
       <p id="kim"></p>
       <div>
       <h1>using select all elements(*)</h1>
-      <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
-        <form>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum aut dolor, suscipit quaerat libero in modi expedita? Officia debitis ipsum dicta ducimus voluptates praesentium id incidunt. Ipsa unde eos veniam fuga libero labore fugit quidem neque. Ducimus nihil magnam recusandae, temporibus excepturi aliquid in.</p>
+      <p class="kim"> The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
+      <form>
             enter name<input type =text>
             <input type ="password">
             <input type ="color">
         </form>
+        <ul>
+            <li>coffee</li>
+            <li>tea</li>
+            <li>juices</li>
+            <li>coldrinks</li>
+        </ul>
        
     </div>
      
@@ -27,8 +34,8 @@
  
        $(document).ready(function () {
            $('#btn').click(function(){
-            $("p.demo").toggle();     
-           })	
+            $("ul li:first").toggle();     
+           });
        });
  </script>
 </body>
